@@ -5,11 +5,11 @@ body {
 }
 
 header {
-    background: #35424a;
+    background: #4eaee9;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #363636 6px solid;
 }
 
 header h1 {
@@ -19,7 +19,7 @@ header h1 {
 header #branding {
     float: left;
     margin-left: 1.5%;
-    color: #0090c4;
+    color: #ffffff;
 }
 
 header nav {
