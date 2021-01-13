@@ -1,21 +1,21 @@
 import './App.css';
-import React, { useState, useEffect } from 'react'
-import Header from './components/Header'
-import Random from './components/Random'
-import Search from './components/Search'
-import Nav from './components/Nav'
-
+import React, { useState, useEffect } from 'react';
+import Nav from './components/Nav';
+import Random from './components/Random';
+import Search from './components/Search';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
-  return(
+  return (
     <div>
-      
+      <Router>
+          <Nav />
+          <Route path="/Search" component={Search} />
+          <Route path="/Random" component={Random} />
+      </Router>
 
 
-      <Nav />
-      <Random />
-      <Search />
-      <Header />
+
     </div>
   )
 }
