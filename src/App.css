@@ -54,3 +54,9 @@ header li {
     display: flex;
     margin: 20px auto;
 }
+
+#input {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
