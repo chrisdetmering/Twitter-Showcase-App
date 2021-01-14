@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Random from './components/Random';
 import Search from './components/Search';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home'
 
 const App = () => {
   return (
@@ -19,11 +20,5 @@ const App = () => {
     </div>
   )
 }
-
-const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-  </div>
-);
 
 export default App

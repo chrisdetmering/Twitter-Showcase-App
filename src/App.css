@@ -10,14 +10,14 @@ header {
     background: #4eaee9;
     color: #ffffff;
     padding-top: 30px;
-    min-height: 70px;
+    min-height: 40px;
     border-bottom: #363636 3px solid;
-    width: 75%;
     margin: auto;
 }
 
 header h1 {
-    margin-top: 0px;
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header #branding {
@@ -32,9 +32,11 @@ header nav {
 }
 
 header li {
+    color: white;
     font-size: 25px;
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
-    margin-top: -20px;
+    margin-top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
