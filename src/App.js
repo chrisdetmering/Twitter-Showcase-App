@@ -10,9 +10,12 @@ const App = () => {
     <div>
       <Router>
         <Nav />
-        <Route path="/" component={Home} />
-        <Route path="/Search" component={Search} />
-        <Route path="/Random" component={Random} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Search" component={Search} />
+          <Route path="/Random" component={Random} />
+        </Switch>
+
       </Router>
 
 
