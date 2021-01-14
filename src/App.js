@@ -9,9 +9,10 @@ const App = () => {
   return (
     <div>
       <Router>
-          <Nav />
-          <Route path="/Search" component={Search} />
-          <Route path="/Random" component={Random} />
+        <Nav />
+        <Route path="/" component={Home} />
+        <Route path="/Search" component={Search} />
+        <Route path="/Random" component={Random} />
       </Router>
 
 
@@ -19,5 +20,11 @@ const App = () => {
     </div>
   )
 }
+
+const Home = () => (
+  <div>
+    <h1>Home Page</h1>
+  </div>
+);
 
 export default App
