@@ -15,11 +15,7 @@ const App = () => {
           <Route path="/Search" component={Search} />
           <Route path="/Random" component={Random} />
         </Switch>
-
       </Router>
-
-
-
     </div>
   )
 }
