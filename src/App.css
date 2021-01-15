@@ -56,12 +56,17 @@ header li {
 }
 
 #input {
-    width: 600px;
-    height: 25px;
-    margin-top: 50px;
-    margin-left: 400px;
-    border-radius: 10px;
-    text-align: center;
+      display: block;
+      margin: auto;
+      width: 45em;
+      margin-top: 50px;
+      border-radius: 50px;
+      height: 30px; 
+      padding-left: 20px;
+}
+
+#input placeholder {
+    padding-left: 20px;
 }
 
 #home-paragraph {
