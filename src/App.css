@@ -61,9 +61,29 @@ header li {
       width: 45em;
       margin-top: 50px;
       border-radius: 50px;
-      height: 30px; 
+      height: 50px; 
       padding-left: 20px;
       outline: none;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#button-user {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+}
+
+#button-content {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
 }
 
 #input placeholder {
