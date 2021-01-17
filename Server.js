@@ -3,7 +3,7 @@ const Server = express()
 
 Server.get("/", (req, res) => {
     console.log("Responding to root route")
-    res.send("hello from rooo4ot")
+    res.send("Nodemon is working")
 })
 
 Server.listen(3002, () => {
