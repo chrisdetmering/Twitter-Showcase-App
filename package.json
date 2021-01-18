@@ -42,5 +42,17 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "main": "Server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeRocky7/Twitter-Showcase-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeRocky7/Twitter-Showcase-App/issues"
+  },
+  "homepage": "https://github.com/JoeRocky7/Twitter-Showcase-App#readme",
+  "description": ""
 }
