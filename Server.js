@@ -1,14 +1,14 @@
 const express = require('express');
-const Server = express();
+const server = express();
 const request = require("request");
 const axios = require('axios');
 
 
 // Route
-Server.get("/", (req, res) => {
+server.get("/", (req, res) => {
   res.send("hello")
 })
 
-Server.listen(3002, () => {
+server.listen(3002, () => {
     console.log("Server is up and listening on 3002...")
 })
