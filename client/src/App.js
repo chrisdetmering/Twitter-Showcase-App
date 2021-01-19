@@ -1,13 +1,13 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Nav from './components/Nav';
 import Random from './components/Random';
 import Search from './components/Search';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home'
-import axios from 'axios'
+// import axios from 'axios'
 
-const accessToken = "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAA1Pyh30C82i9UpYmoekr3TOGM7wA%3D2C6UxXsdmoIQFdeuYeAqHG1xpMEbKMDBl0wcQ5jfSJniLNFfJt"
+// const accessToken = "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAA1Pyh30C82i9UpYmoekr3TOGM7wA%3D2C6UxXsdmoIQFdeuYeAqHG1xpMEbKMDBl0wcQ5jfSJniLNFfJt"
 
 const App = () => {
   return (

@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
-    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -20,7 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nodemon Server",
     "watch": "cra-build-watch"
   },
   "eslintConfig": {
@@ -45,17 +43,5 @@
     "concurrently": "^5.3.0",
     "cra-build-watch": "^3.4.0",
     "nodemon": "^2.0.7"
-  },
-  "main": "Server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JoeRocky7/Twitter-Showcase-App.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JoeRocky7/Twitter-Showcase-App/issues"
-  },
-  "homepage": "https://github.com/JoeRocky7/Twitter-Showcase-App#readme",
-  "description": ""
+  }
 }

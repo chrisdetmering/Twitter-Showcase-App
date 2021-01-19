@@ -6,9 +6,7 @@ const axios = require('axios');
 
 // Route
 Server.get("/", (req, res) => {
-   axios.get(`https://api.twitter.com/1.1/search/tweets.json?q=nasa`)
-   .then(res => console.log(response))
-   .catch(error => (err))
+  res.send("hello")
 })
 
 Server.listen(3002, () => {
