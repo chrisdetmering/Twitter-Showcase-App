@@ -1,7 +1,15 @@
 const express = require('express');
 const server = express();
 const axios = require('axios');
+const { json } = require('express');
 const bearerToken = "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF";
+
+// server.post("/", (req, res) => {
+//   axios({
+//     method: 'post',
+
+//   })
+// })
 
 
 
@@ -10,21 +18,22 @@ server.get("/", (req, res) => {
     method: 'get',
     url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
     headers: {
-      Bearer: "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF",
+      'Authorization': `Basic ${bearerToken}` 
     }
   })
-  
-    .then(function (response) {
-            //handle success
-            res.send(response.statuses);
-       })
-       .catch(function (error) {
-            //handle error
-            console.log(error);
-       });
-
-       
+  .then(function (response) {
+    //handle success
+    res.send(response.data);
 })
+.catch(function (error) {
+    //handle error
+    console.log(error);
+});
+
+})
+  
+  
+    
 
 server.listen(3002, () => {
     console.log("Server is up and listening on 3002...")
