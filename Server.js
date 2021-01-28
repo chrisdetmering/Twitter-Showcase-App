@@ -1,29 +1,30 @@
 const express = require('express');
 const server = express();
 const axios = require('axios');
+const bearerToken = "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF";
 
-const twitterKey = () => {
-  const API_KEY = "HzSjx6lNrFUYtARRf9dOmaZaK";
-  const API_SECRET_KEY = "DJHuIDsrG5hR7Uy85UbDkcgYsogu8WXrXGcOCcae7aHTFun6Kl";
-  
 
-  
-  
-  server.get("/", (req, res) => {
-    axios.get(`https://api.twitter.com/1.1/search/tweets.json?q=nasa@app_key=${API_KEY}&app_secret_key=${API_SECRET_KEY}`)
-    .then(response => {
-      res.send(response.data)
-    })
-    .catch((err) => {
-      console.log(err);
-    })
+
+server.get("/", (req, res) => {
+  axios({
+    method: 'get',
+    url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
+    headers: {
+      Bearer: "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF",
+    }
   })
+  
+    .then(function (response) {
+            //handle success
+            res.send(response.statuses);
+       })
+       .catch(function (error) {
+            //handle error
+            console.log(error);
+       });
 
-  twitterKey();
-} 
-
-//Route
-
+       
+})
 
 server.listen(3002, () => {
     console.log("Server is up and listening on 3002...")
