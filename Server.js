@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 const axios = require('axios');
 const { json } = require('express');
-const bearerToken = "AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF";
+
 
 server.get("/", (req, res) => {
   axios({
