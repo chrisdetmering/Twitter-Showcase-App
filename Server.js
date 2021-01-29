@@ -2,12 +2,17 @@ const express = require('express');
 const server = express();
 const axios = require('axios');
 const { json } = require('express');
+const path = require('path');
+
+// Set static folder
+server.use(express.static(path.join(__dirname, 'public')));
 
 
-server.get("/", (req, res) => {
+
+server.get("/api/tweets/search", (req, res) => {
   axios({
     method: 'get',
-    url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
+    url: 'https://api.twitter.com/1.1/search/tweets.json?q=result_type=mixed',
     headers: {
       Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF"
     }
