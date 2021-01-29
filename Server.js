@@ -4,18 +4,18 @@ const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
 
-server.use('/static', express.static(path.join(__dirname, 'public')))
 
+server.use(express.static('public'));
 
 
 server.get("/", (req, res) => {
-  res.send("hello world")
+  res.send("hello world");
 });
 
 server.get("/api/tweets/search", (req, res) => {
   axios({
     method: 'get',
-    url: 'https://api.twitter.com/1.1/search/tweets.json?q=result_type=mixed',
+    url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
     headers: {
       Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF"
     }
