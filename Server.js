@@ -4,10 +4,13 @@ const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
 
-// Set static folder
-server.use(express.static(path.join(__dirname, 'public')));
+server.use('/static', express.static(path.join(__dirname, 'public')))
 
 
+
+server.get("/", (req, res) => {
+  res.send("hello world")
+});
 
 server.get("/api/tweets/search", (req, res) => {
   axios({
