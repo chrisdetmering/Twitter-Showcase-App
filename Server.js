@@ -5,11 +5,11 @@ const { json } = require('express');
 const path = require('path');
 
 
-server.use(express.static('public'));
+server.use(express.static(path.join('client', 'build')));
 
 
 server.get("/", (req, res) => {
-  res.send("hello world");
+  res.sendFile(path.join('client', 'build', 'index.html'))
 });
 
 server.get("/api/tweets/search", (req, res) => {
