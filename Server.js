@@ -19,11 +19,9 @@ server.get("/api/tweets/search", (req, res) => {
     }
   })
     .then(function (response) {
-      //handle success
       res.send(response.data.statuses);
     })
     .catch(function (error) {
-      //handle error
       console.log(error);
     });
 });
