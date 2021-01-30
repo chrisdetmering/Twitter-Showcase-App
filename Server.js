@@ -4,9 +4,7 @@ const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
 
-
 server.use(express.static(path.join('client', 'public')));
-
 
 server.get("/", (req, res) => {
   res.sendFile(path.join('client', 'public', 'index.html'))
