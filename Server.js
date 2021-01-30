@@ -4,10 +4,10 @@ const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
 
-server.use(express.static(path.join('client', 'public')));
+server.use(express.static(path.join('client', 'build')));
 
 server.get("/", (req, res) => {
-  res.sendFile(path.join('client', 'public', 'index.html'))
+  res.sendFile(path.join('client', 'build', 'index.html'))
 });
 
 server.get("/api/tweets/search", (req, res) => {
