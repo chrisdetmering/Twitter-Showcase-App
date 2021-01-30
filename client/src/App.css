@@ -121,16 +121,13 @@ header li {
     justify-content: center;
 }
 
-
-
-#random-container-1 {
+.random-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-left: 130px;
     background-color: white;
-    width:100px;
-    height:100px;
-}
-
-#random-container-2 {
-    background-color: white;
-    width:100px;
-    height:100px;
+    height:200px;
+    width: 200px;
+    border-radius: 8px;
 }
