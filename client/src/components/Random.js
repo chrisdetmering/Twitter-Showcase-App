@@ -8,14 +8,17 @@ const Random = () => {
 
 
     useEffect(() => {
-       axios.get(`http://localhost:3002/api/tweets/search`)
-            .then(response => {
-                setTweets(response.data)
-                console.log(response.data.statuses)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        axios({
+            method: 'get',
+            url: 'http://localhost:3002/api/tweets/search'
+        })
+        .then(function (response) {
+            setTweets(response.data)
+            console.log(response.data)
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
             
     })
 
