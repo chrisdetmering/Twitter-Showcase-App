@@ -14,7 +14,7 @@ const App = () => {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/api/tweets/search" component={Search} />
+          <Route path="/Search" component={Search} />
           <Route path="/Random" component={Random} />
         </Switch>
       </Router>
