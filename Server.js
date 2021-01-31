@@ -3,6 +3,7 @@ const server = express();
 const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
+var cors = require('cors')
 
 server.use(express.static(path.join('client', 'build')));
 
@@ -10,7 +11,7 @@ server.get("/", (req, res) => {
   res.sendFile(path.join('client', 'build', 'index.html'))
 });
 
-server.get("/api/tweets/search", (req, res) => {
+server.get("/api/tweets/search",  (req, res) => {
   axios({
     method: 'get',
     url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
@@ -19,7 +20,7 @@ server.get("/api/tweets/search", (req, res) => {
     }
   })
     .then(function (response) {
-      res.send(response.data.statuses);
+      res.json(response.data.statuses);
     })
     .catch(function (error) {
       console.log(error);

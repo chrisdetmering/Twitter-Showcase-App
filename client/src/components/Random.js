@@ -5,13 +5,11 @@ import { useState, useEffect } from 'react'
 const Random = () => {
     const [tweets, setTweets] = useState([]);
    
-
-
     useEffect(() => {
         axios({
             method: 'get',
             url: 'http://localhost:3002/api/tweets/search'
-        })
+            })
         .then(function (response) {
             setTweets(response.data)
             console.log(response.data)
@@ -19,13 +17,11 @@ const Random = () => {
           .catch(function (error) {
             console.log(error);
           });
-            
+           Random();
     })
-
     return (
         <div>
             {tweets}
-
         </div>
     )
 }
