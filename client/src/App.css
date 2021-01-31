@@ -128,10 +128,11 @@ header li {
     margin-left: 130px;
     background-color: white;
     height:200px;
-    width: 200px;
+    width: 700px;
     border-radius: 8px;
 }
 
 .unordered-list {
     color: white;
 }
+

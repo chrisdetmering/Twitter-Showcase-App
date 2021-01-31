@@ -3,32 +3,36 @@ import axios from 'axios';
 import { useState, useEffect } from 'react'
 
 const Random = () => {
-    const [tweets, setTweets] = useState([]);
+    const [nasaTweets, setNasaTweets] = useState([]);
 
     useEffect(() => {
         axios({
             method: 'get',
             url: 'http://localhost:3002/api/tweets/search'
         }).then(res => {
-            setTweets(res.data);
+            setNasaTweets(res.data);
+            console.log(res.data[0]);
         }).catch(err => {
             console.log(err)
         })
     }, [])
 
     return (
-        <div>
-           <ul class="unordered-list">
-               {tweets.map(tweet => (
-                   <li>{tweet.text}</li>
-               ))}
-           </ul>
+        <div class="random-container">
+            <div class="nasa-container">
+                {nasaTweets.map(nasaTweet => (
+                    <div>{nasaTweet.text}</div>
+                ))}
+            </div>
+           
         </div>
     )
 }
 
 export default Random
 
-// {tweets.map(tweet => (
-//     <h1>{tweet.text}</h1>
-// ))}
+
+
+// {nasaTweets.map(tweet => (
+//     <div class="nasa-container">
+//         <div>{tweet.text}</div>
