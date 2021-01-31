@@ -9,21 +9,16 @@ const Random = () => {
         axios({
             method: 'get',
             url: 'http://localhost:3002/api/tweets/search'
+        }).then(res => {
+            setTweets(res.data);
         })
-            .then(function (response) {
-                console.log(response.data);
-                setTweets(response.data);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-        Random();
-        
-    },[])
+    }, [])
 
     return (
         <div>
-            {tweets}
+           {tweets.map(tweet => (
+               <h1>{tweet.text}</h1>
+           ))}
         </div>
     )
 }
