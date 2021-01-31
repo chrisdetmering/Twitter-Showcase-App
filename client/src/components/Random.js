@@ -11,13 +11,14 @@ const Random = () => {
             url: 'http://localhost:3002/api/tweets/search'
         })
             .then(function (response) {
-                console.log(response.data)
+                console.log(response.data);
+                setTweets(response.data);
             })
             .catch(function (error) {
                 console.log(error);
             });
         Random();
-        setTweets(response.data);
+        
     },[])
 
     return (
