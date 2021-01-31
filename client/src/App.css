@@ -131,3 +131,7 @@ header li {
     width: 200px;
     border-radius: 8px;
 }
+
+.unordered-list {
+    color: white;
+}

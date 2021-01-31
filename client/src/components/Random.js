@@ -18,11 +18,17 @@ const Random = () => {
 
     return (
         <div>
-           {tweets.map(tweet => (
-               <h1>{tweet.text}</h1>
-           ))}
+           <ul class="unordered-list">
+               {tweets.map(tweet => (
+                   <li>{tweet.text}</li>
+               ))}
+           </ul>
         </div>
     )
 }
 
 export default Random
+
+// {tweets.map(tweet => (
+//     <h1>{tweet.text}</h1>
+// ))}
