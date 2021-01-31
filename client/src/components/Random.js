@@ -11,6 +11,8 @@ const Random = () => {
             url: 'http://localhost:3002/api/tweets/search'
         }).then(res => {
             setTweets(res.data);
+        }).catch(err => {
+            console.log(err)
         })
     }, [])
 
