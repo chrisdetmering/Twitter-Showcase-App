@@ -14,13 +14,13 @@ server.get("/", (req, res) => {
 server.get("/api/tweets/search",  (req, res) => {
   axios({
     method: 'get',
-    url: 'https://api.twitter.com/1.1/search/tweets.json?q=nasa',
+    url: 'https://api.twitter.com/1.1/users/show.json?screen_name=NASA',
     headers: {
-      Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAADEFFRo%2FTfeYUrWjtgp9WtLqcwFI%3DstdGTd0hupHIIxV0E1eB31OOVs7gq3Q5X5mfLCnlVm2FrW4SGF"
+      Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH",
     }
   })
     .then(function (response) {
-      res.json(response.data.statuses);
+      res.json(response.data);
     })
     .catch(function (error) {
       console.log(error);
