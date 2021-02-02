@@ -136,6 +136,22 @@ header li {
     color: white;
 }
 
+.nasa-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 100px auto;
+    width: 200px;
+    height:200px;
+}
+
 .nasa-tweet {
-    color: white;
+    display: flex;
+    margin: 80px auto;
+    color: black;
+}
+
+.nasa-button {
+    display: flex;
+    
 }

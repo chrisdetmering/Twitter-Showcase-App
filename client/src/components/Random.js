@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react'
 
 const Random = () => {
     const [nasaTweets, setNasaTweets] = useState([]);
-   
+
 
     useEffect(() => {
         axios({
             method: 'get',
             url: 'http://localhost:3002/api/tweets/search'
         }).then(res => {
-            setNasaTweets(res.data);
+            setNasaTweets(res.data.status.text);
             console.log(res.data.status.text);
         }).catch(err => {
             console.log(err)
@@ -19,9 +19,17 @@ const Random = () => {
     }, [])
 
     return (
-        <div class="nasa-tweet">
-            {nasaTweets.status.text}
+        <div class="nasa-container">
+            <div class="nasa-tweet">
+                NASA
+            </div>
+            <div>
+                <button class="nasa-button">Get Tweet!</button>
+            </div>
+
+
         </div>
+
     )
 }
 export default Random
