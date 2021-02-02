@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react'
+import NasaModal from './NasaModal'
 
 const Random = () => {
     const [nasaTweets, setNasaTweets] = useState([]);
-
 
     useEffect(() => {
         axios({
@@ -19,24 +19,20 @@ const Random = () => {
     }, [])
 
     return (
-        <div class="nasa-container">
-            <div class="nasa-tweet">
-                NASA
-            </div>
-            <div>
-                <button class="nasa-button">Get Tweet!</button>
-            </div>
+        <div>
+            <div class="nasa-container">
+                <div class="nasa-tweet">
+                    <div>NASA</div>
+
+                </div>
+                <div>
+                    <button class="nasa-button">Get Tweet!</button>
+                </div>
 
 
+            </div>
+            <NasaModal nasaTweets={nasaTweets}/>
         </div>
-
     )
 }
 export default Random
-
-
-
-// {nasaTweets.map(tweet => (
-//     <div class="nasa-container">
-//         <div>{tweet.text}</div>
-
