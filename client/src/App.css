@@ -154,3 +154,7 @@ header li {
 .nasa-button {
     display: flex;
 }
+
+h1 {
+    color: white;
+}

@@ -1,11 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 
-const nasaModal = ({ nasaTweets }) => {
+const NasaModal = ({ nasaTweets }) => {
+    const [isOpen, setIsOpen] = useState(false)
+
+
     return (
         <div>
+            
             <h1>{nasaTweets}</h1>
         </div>
     )
 }
 
-export default nasaModal
+export default NasaModal
