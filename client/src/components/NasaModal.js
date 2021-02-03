@@ -1,18 +1,19 @@
 import React from 'react'
-import { useState } from 'react'
+import {  useState } from 'react'
 
 const NasaModal = ({ nasaTweets }) => {
     const [isOpen, setIsOpen] = useState(false)
 
-
     return (
-        <div className="nasa-modal">
-            <button onClick={() => setIsOpen(!isOpen)}>Get Tweet!</button>
+        <div>
+            <button id="nasa-button" onClick={() => setIsOpen(!isOpen)}>Get NASA Tweet!</button>
             {isOpen ? (
-                <div className="modal"><p>{nasaTweets}</p></div>
+                <div className="modal">
+                    {nasaTweets.map(tweet => (
+                        <p>{tweet.text}</p>
+                    ))}
+                </div>
             ) : null}
-
-
         </div>
     )
 }

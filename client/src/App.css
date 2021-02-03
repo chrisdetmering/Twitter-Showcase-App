@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;
     /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */
     /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
-    background-color: #002461;
+    background-color: #d8d8d8;
     background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -136,29 +136,19 @@ header li {
     color: white;
 }
 
-.nasa-container {
+#nasa-button {
     display: flex;
     justify-content: center;
-    background-color: white;
-    margin: 100px auto;
-    width: 200px;
-    height:200px;
-}
-
-.nasa-tweet {
-    display: flex;
-    margin: 80px auto;
-    color: black;
-}
-
-.nasa-button {
-    display: flex;
-}
-
-h1 {
-    color: white;
+    margin:  50px auto;
 }
 
 .modal {
+    width: 400px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 10px;
+    background-color: grey;
     color: white;
+    border-radius: 4px;
 }

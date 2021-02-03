@@ -12,8 +12,8 @@ const Random = () => {
             method: 'get',
             url: 'http://localhost:3002/api/tweets/search'
         }).then(res => {
-            setNasaTweets(res.data.status.text);
-            console.log(res.data.status.text);
+            setNasaTweets(res.data);
+            console.log(res.data);
         }).catch(err => {
             console.log(err)
         })
