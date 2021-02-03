@@ -5,6 +5,7 @@ import NasaModal from './NasaModal'
 
 const Random = () => {
     const [nasaTweets, setNasaTweets] = useState([]);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         axios({
@@ -18,6 +19,13 @@ const Random = () => {
         })
     }, [])
 
+
+    const showModalOn = (e) => {
+        setShowModal(true);
+        
+    }
+
+
     return (
         <div>
             <div class="nasa-container">
@@ -26,7 +34,7 @@ const Random = () => {
 
                 </div>
                 <div>
-                    <button class="nasa-button">Get Tweet!</button>
+                    <button onClick={showModalOn} class="nasa-button">Get Tweet!</button>
                 </div>
 
 
