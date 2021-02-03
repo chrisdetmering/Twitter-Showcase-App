@@ -6,9 +6,13 @@ const NasaModal = ({ nasaTweets }) => {
 
 
     return (
-        <div>
-            
-            <h1>{nasaTweets}</h1>
+        <div className="nasa-modal">
+            <button onClick={() => setIsOpen(!isOpen)}>Get Tweet!</button>
+            {isOpen ? (
+                <div className="modal"><p>{nasaTweets}</p></div>
+            ) : null}
+
+
         </div>
     )
 }

@@ -22,17 +22,6 @@ const Random = () => {
 
     return (
         <div>
-            <div class="nasa-container">
-                <div class="nasa-tweet">
-                    <div>NASA</div>
-
-                </div>
-                <div>
-                    <button class="nasa-button">Get Tweet!</button>
-                </div>
-
-
-            </div>
             <NasaModal nasaTweets={nasaTweets}/>
         </div>
     )
