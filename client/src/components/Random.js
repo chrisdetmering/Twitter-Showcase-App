@@ -10,7 +10,7 @@ const Random = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            url: 'http://localhost:3002/api/tweets/search'
+            url: 'http://localhost:3002/api/tweets/NASA'
         }).then(res => {
             setNasaTweets(res.data);
             console.log(res.data);

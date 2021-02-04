@@ -11,7 +11,7 @@ server.get("/", (req, res) => {
   res.sendFile(path.join('client', 'build', 'index.html'))
 });
 
-server.get("/api/tweets/search",  (req, res) => {
+server.get("/api/tweets/NASA",  (req, res) => {
   axios({
     method: 'get',
     url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=NASA&count=200`, 

@@ -151,4 +151,10 @@ header li {
     background-color: grey;
     color: white;
     border-radius: 4px;
+} 
+
+#spacex-button {
+    display: flex;
+    justify-content: center;
+    margin:  50px auto;
 }
