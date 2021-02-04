@@ -1,14 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
 
-const SpaceXModal = () => {
+const SpaceXModal = ({ spaceXTweets }) => {
     const [isOpen, setIsOpen] = useState(false);
+    let randomTweet = [ spaceXTweets[Math.floor(Math.random() * spaceXTweets.length)] ];
     return (
         <div>
-            <button id="spacex-button" onClick={() => setIsOpen(!isOpen)}>Get SpaceX tweets!</button>
+            <button id="spacex-button" onClick={() => setIsOpen(!isOpen)}>Get SpaceX tweet!</button>
             {isOpen ? (
                 <div className="modal">
-                    <p>Hello</p>
+                    {randomTweet.map(tweet => (
+                        <p>{tweet.text}</p>
+                    ))}
                 </div>
             ) : null }
         </div>
