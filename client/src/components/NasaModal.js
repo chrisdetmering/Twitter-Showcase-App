@@ -2,11 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 
 const NasaModal = ({ nasaTweets }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
     let randomTweet = [ nasaTweets[Math.floor(Math.random() * nasaTweets.length)] ];
-    console.log(randomTweet)
-
-    
+    console.log(randomTweet);
 
     return (
         <div>

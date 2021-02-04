@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react'
 import NasaModal from './NasaModal'
+import SpaceXModal from './SpaceXModal'
 
 const Random = () => {
     const [nasaTweets, setNasaTweets] = useState([]);
@@ -18,14 +19,10 @@ const Random = () => {
         })
     }, [])
 
-    
-    
-
-
-
     return (
         <div>
             <NasaModal nasaTweets={nasaTweets}/>
+            <SpaceXModal />
         </div>
     )
 }
