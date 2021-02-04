@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const NasaModal = ({ nasaTweets }) => {
     const [isOpen, setIsOpen] = useState(false)
-    let randomTweet = nasaTweets[Math.floor(Math.random() * nasaTweets.length)];
+    let randomTweet = [ nasaTweets[Math.floor(Math.random() * nasaTweets.length)] ];
     console.log(randomTweet)
 
     
@@ -14,7 +14,7 @@ const NasaModal = ({ nasaTweets }) => {
             {isOpen ? (
                 <div className="modal">
                     {randomTweet.map(tweet => (
-                        <p>{tweet}</p>
+                        <p>{tweet.text}</p>
                     ))}
                 </div>
             ) : null}
