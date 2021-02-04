@@ -12,7 +12,7 @@ const Random = () => {
             url: 'http://localhost:3002/api/tweets/search'
         }).then(res => {
             setNasaTweets(res.data);
-            // console.log(res.data);
+            console.log(res.data);
         }).catch(err => {
             console.log(err)
         })
