@@ -25,8 +25,11 @@ const Random = () => {
     
 return (
         <div>
-            <button id="nasa-button" name="NASA" onClick={handleClick}>get NASA tweet!</button>
-            <button id="spacex-button" name="Spacex" onClick={handleClick}>Get SpaceX tweet!</button>
+            <button id="nasa-button" name="NASA" onClick={handleClick}>get NASA Tweet!</button>
+            <button id="spacex-button" name="Spacex" onClick={handleClick}>Get SpaceX Tweet!</button>
+            <button id="spacex-button" name="elonmusk" onClick={handleClick}>Get Elon Musk Tweet!</button>
+            <button id="spacex-button" name="whitegavriel" onClick={handleClick}>Get Windows 96 Tweet!</button>
+            <button id="spacex-button" name="DanMasonVapor" onClick={handleClick}>Get Dan Mason Tweet!</button>
             {isOpen ? <div className="modal">{displayRandomTweet}</div> : null}
         
         </div>
