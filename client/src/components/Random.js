@@ -15,16 +15,20 @@ const Random = () => {
         .get(`/api/tweets?search=${param}`)
         .then((res) => setTweets(res.data))
         .catch((err) => console.log(err))
+
+        setIsOpen(!isOpen);
     };
 
     const randomNumber = Math.floor(Math.random() * tweets.length);
-    console.log(randomNumber);
+    const displayRandomTweet = tweets[randomNumber]?.text;
     
     
 return (
         <div>
             <button id="nasa-button" name="NASA" onClick={handleClick}>get NASA tweet!</button>
             <button id="spacex-button" name="Spacex" onClick={handleClick}>Get SpaceX tweet!</button>
+            {isOpen ? <div className="modal">{displayRandomTweet}</div> : null}
+        
         </div>
     )
 }

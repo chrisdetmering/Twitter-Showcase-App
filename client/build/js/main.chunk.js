@@ -347,6 +347,8 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 
 const Random = () => {
+  var _tweets$randomNumber;
+
   const [tweets, setTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
   const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
 
@@ -354,10 +356,11 @@ const Random = () => {
     e.preventDefault();
     const param = e.target.name;
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setTweets(res.data)).catch(err => console.log(err));
+    setIsOpen(!isOpen);
   };
 
   const randomNumber = Math.floor(Math.random() * tweets.length);
-  console.log(randomNumber);
+  const displayRandomTweet = (_tweets$randomNumber = tweets[randomNumber]) === null || _tweets$randomNumber === void 0 ? void 0 : _tweets$randomNumber.text;
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "nasa-button",
@@ -366,7 +369,7 @@ const Random = () => {
       children: "get NASA tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "spacex-button",
@@ -375,12 +378,19 @@ const Random = () => {
       children: "Get SpaceX tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 13
-    }, undefined)]
+    }, undefined), isOpen ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: "modal",
+      children: displayRandomTweet
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 23
+    }, undefined) : null]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 25,
+    lineNumber: 27,
     columnNumber: 9
   }, undefined);
 };
