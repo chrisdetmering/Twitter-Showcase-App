@@ -16,7 +16,7 @@ const Random = () => {
         .then((res) => setTweets(res.data))
         .catch((err) => console.log(err))
 
-        setIsOpen(!isOpen);
+        setIsOpen(!isOpen); //closes Modal
     };
 
     const randomNumber = Math.floor(Math.random() * tweets.length);
