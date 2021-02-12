@@ -356,7 +356,7 @@ const Random = () => {
     e.preventDefault();
     const param = e.target.name;
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setTweets(res.data)).catch(err => console.log(err));
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); //closes Modal
   };
 
   const randomNumber = Math.floor(Math.random() * tweets.length);
@@ -439,51 +439,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Search.js";
 
 
-class Search extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  render() {
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+
+
+const Search = () => {
+  const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
+  const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+  const [content, setContent] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+
+  const handleClick = e => {
+    e.preventDefault();
+    const param = e.target.name;
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setUser(res.data)).catch(err => console.log(err));
+    console.log(user);
+  };
+
+  const updateInput = e => {
+    setInput(e.target.value);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("input", {
         id: "input",
         type: "text",
-        placeholder: "Search here"
+        placeholder: "Search here",
+        value: input,
+        onChange: updateInput
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 7,
+        lineNumber: 34,
         columnNumber: 17
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-user",
+          type: "submit",
+          name: "nasa",
+          onClick: handleClick,
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 37,
           columnNumber: 21
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
+          type: "submit",
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 38,
           columnNumber: 21
-        }, this)]
+        }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 11,
+        lineNumber: 36,
         columnNumber: 17
-      }, this)]
+      }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 33,
       columnNumber: 13
-    }, this);
-  }
-
-}
+    }, undefined)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 32,
+    columnNumber: 9
+  }, undefined);
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Search);
 
