@@ -449,7 +449,7 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 const Search = () => {
   const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
-  const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+  const [userTweets, setUserTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
   const updateInput = e => {
     setInput(e.target.value);
@@ -458,7 +458,7 @@ const Search = () => {
 
   const handleClick = e => {
     e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUser(res.data)).catch(err => console.log(err));
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -502,8 +502,8 @@ const Search = () => {
       fileName: _jsxFileName,
       lineNumber: 25,
       columnNumber: 13
-    }, undefined), user.map(use => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      children: use.text
+    }, undefined), userTweets.map(user => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      children: user.text
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 34,

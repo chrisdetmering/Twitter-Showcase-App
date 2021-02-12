@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Search = () => {
     const [input, setInput] = useState('');
-    const [user, setUser] = useState([]);
+    const [userTweets, setUserTweets] = useState([]);
 
     const updateInput = (e) => {
         setInput(e.target.value);
@@ -16,7 +16,7 @@ const Search = () => {
 
         axios
         .get(`/api/tweets?search=${input}`)
-        .then((res) => setUser(res.data))
+        .then((res) => setUserTweets(res.data))
         .catch((err) => console.log(err))
     }
 
@@ -30,8 +30,8 @@ const Search = () => {
                     <button id="button-content" type="submit">Content</button>
                 </div>
             </div>
-            {user.map(use => (
-                <div>{use.text}</div>
+            {userTweets.map(user => (
+                <div>{user.text}</div>
             ))}
         </div>
     )
