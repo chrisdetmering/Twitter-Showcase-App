@@ -504,7 +504,7 @@ const Search = () => {
       fileName: _jsxFileName,
       lineNumber: 33,
       columnNumber: 13
-    }, undefined), user.map(use => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+    }, undefined), user.map(use => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: use.text
     }, void 0, false, {
       fileName: _jsxFileName,

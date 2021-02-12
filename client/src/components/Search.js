@@ -39,7 +39,7 @@ const Search = () => {
                 </div>
             </div>
             {user.map(use => (
-                <p>{use.text}</p>
+                <div>{use.text}</div>
             ))}
         </div>
     )
