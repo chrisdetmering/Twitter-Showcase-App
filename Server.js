@@ -16,7 +16,7 @@ server.get("/api/tweets",  (req, res) => {
 
   axios({
     method: 'get',
-    url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}`,
+    url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}&count=50`,
     headers: {
       Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH",
     }
@@ -29,13 +29,6 @@ server.get("/api/tweets",  (req, res) => {
       console.log(error);
     });
 });
-
-server.get("/api/user", (req, res) => {
-
-  axios
-
-})
-
 
 server.listen(3002, () => {
   console.log("Server is up and listening on 3002...")

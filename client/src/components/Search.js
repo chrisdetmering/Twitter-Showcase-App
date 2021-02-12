@@ -5,7 +5,6 @@ import { useState } from 'react';
 const Search = () => {
     const [input, setInput] = useState('');
     const [user, setUser] = useState([]);
-    const [content, setContent] = useState([]);
 
     const updateInput = (e) => {
         setInput(e.target.value);
@@ -23,6 +22,7 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         console.log(user);
+        
     }
 
 
@@ -38,6 +38,9 @@ const Search = () => {
                     <button id="button-content" type="submit">Content</button>
                 </div>
             </div>
+            {user.map(use => (
+                <p>{use.text}</p>
+            ))}
         </div>
     )
 }

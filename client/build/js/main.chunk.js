@@ -450,7 +450,6 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 const Search = () => {
   const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
   const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
-  const [content, setContent] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
   const updateInput = e => {
     setInput(e.target.value);
@@ -465,7 +464,7 @@ const Search = () => {
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("input", {
         id: "input",
         type: "text",
@@ -505,8 +504,14 @@ const Search = () => {
       fileName: _jsxFileName,
       lineNumber: 33,
       columnNumber: 13
-    }, undefined)
-  }, void 0, false, {
+    }, undefined), user.map(use => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+      children: use.text
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 17
+    }, undefined))]
+  }, void 0, true, {
     fileName: _jsxFileName,
     lineNumber: 32,
     columnNumber: 9
