@@ -18,6 +18,8 @@ const Search = () => {
         .get(`/api/tweets?search=${input}`)
         .then((res) => setUserTweets(res.data))
         .catch((err) => console.log(err))
+
+        console.log(userTweets);
     }
 
     return (
@@ -31,7 +33,9 @@ const Search = () => {
                 </div>
             </div>
             {userTweets.map(user => (
-                <div>{user.text}</div>
+                <div className="search-modal">
+                    <div>{user[0]?.text}</div>
+                </div>
             ))}
         </div>
     )
