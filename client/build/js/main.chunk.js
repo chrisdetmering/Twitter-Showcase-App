@@ -369,7 +369,7 @@ const Random = () => {
       children: "get NASA Tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 27,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "spacex-button",
@@ -378,7 +378,7 @@ const Random = () => {
       children: "Get SpaceX Tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 28,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "spacex-button",
@@ -387,7 +387,7 @@ const Random = () => {
       children: "Get Elon Musk Tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 29,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "spacex-button",
@@ -396,7 +396,7 @@ const Random = () => {
       children: "Get Windows 96 Tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       id: "spacex-button",
@@ -405,19 +405,19 @@ const Random = () => {
       children: "Get Dan Mason Tweet!"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 13
     }, undefined), isOpen ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "modal",
       children: displayRandomTweet
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 23
     }, undefined) : null]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 27,
+    lineNumber: 26,
     columnNumber: 9
   }, undefined);
 };
@@ -452,15 +452,16 @@ const Search = () => {
   const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
   const [content, setContent] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
-  const handleClick = e => {
-    e.preventDefault();
-    const param = e.target.name;
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setUser(res.data)).catch(err => console.log(err));
-    console.log(user);
-  };
-
   const updateInput = e => {
     setInput(e.target.value);
+    console.log(input);
+  };
+
+  const handleClick = e => {
+    e.preventDefault();
+    const param = input;
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setUser(res.data)).catch(err => console.log(err));
+    console.log(user);
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -469,8 +470,8 @@ const Search = () => {
         id: "input",
         type: "text",
         placeholder: "Search here",
-        value: input,
-        onChange: updateInput
+        onChange: updateInput,
+        value: input
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 34,
@@ -479,9 +480,8 @@ const Search = () => {
         class: "search-buttons",
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-user",
-          type: "submit",
-          name: "nasa",
           onClick: handleClick,
+          type: "submit",
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,

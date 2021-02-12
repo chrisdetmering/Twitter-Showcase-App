@@ -2,17 +2,20 @@ import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 
-
-
 const Search = () => {
     const [input, setInput] = useState('');
     const [user, setUser] = useState([]);
     const [content, setContent] = useState([]);
 
+    const updateInput = (e) => {
+        setInput(e.target.value);
+        console.log(input);
+    }
+
     const handleClick = (e) => {
         e.preventDefault();
 
-        const param = e.target.name;
+        const param = input;
 
         axios
         .get(`/api/tweets?search=${param}`)
@@ -20,21 +23,18 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         console.log(user);
-
     }
 
-    const updateInput = (e) => {
-        setInput(e.target.value)
-    }
+
+   
     
-
     return (
         <div>
             <div>
-                <input id="input" type="text" placeholder="Search here" value={input} onChange={updateInput}/>
+                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
 
                 <div class="search-buttons">
-                    <button id="button-user" type="submit" name="nasa" onClick={handleClick}>User</button>
+                    <button id="button-user" onClick={handleClick} type="submit">User</button>
                     <button id="button-content" type="submit">Content</button>
                 </div>
             </div>
