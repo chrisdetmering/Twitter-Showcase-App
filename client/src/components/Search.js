@@ -14,20 +14,12 @@ const Search = () => {
     const handleClick = (e) => {
         e.preventDefault();
 
-        const param = input;
-
         axios
-        .get(`/api/tweets?search=${param}`)
+        .get(`/api/tweets?search=${input}`)
         .then((res) => setUser(res.data))
         .catch((err) => console.log(err))
-
-        console.log(user);
-        
     }
 
-
-   
-    
     return (
         <div>
             <div>

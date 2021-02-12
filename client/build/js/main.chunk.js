@@ -458,9 +458,7 @@ const Search = () => {
 
   const handleClick = e => {
     e.preventDefault();
-    const param = input;
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setUser(res.data)).catch(err => console.log(err));
-    console.log(user);
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUser(res.data)).catch(err => console.log(err));
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -473,7 +471,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 26,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -484,7 +482,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 29,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -492,28 +490,28 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 38,
+          lineNumber: 30,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 28,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 25,
       columnNumber: 13
     }, undefined), user.map(use => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: use.text
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 34,
       columnNumber: 17
     }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 32,
+    lineNumber: 24,
     columnNumber: 9
   }, undefined);
 };
