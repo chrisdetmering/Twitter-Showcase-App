@@ -1,39 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 body {
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #34c6da;
     /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */
     /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
-    background-color: #d8d8d8;
-    background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+    background-color: #0f6fbd;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
 
 header {
     
     padding-top: 30px;
     min-height: 40px;
-    border-bottom: 2.5px solid white;
     margin: auto;
-    box-shadow: 0 0 .1em .1em #ccc;
+    max-width: 1100px;
+}
+
+html {
+    font-family: 'Paytone One', sans-serif;
 }
 
 header h1 {
     margin-top: -5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 5px;
 }
 
 header #branding {
     float: left;
     margin-left: 1.5%;
     color: #ffffff;
-    text-shadow: 1.5px 1.5px 1.5px #ccc;
 }
 
 header nav {
     float: right;
     margin-top: 10px;
-    text-shadow: 1.5px 1.5px 1.5px #ccc;
+    
+    
 }
 
 header li {
@@ -43,19 +49,18 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
     margin-top: -25px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1.5px 1.5px 1.5px #ccc;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
 }
 
 .home-container {
-    margin: 40px auto;
-    border-radius: 20px;
+    margin: 250px auto;
+    border-radius: 25px;
     background-color: white;
     width: 60%;
     height: 60%;
     border: 5px solid white;
-    text-shadow: 1.5px 1.5px 1.5px #ccc;
-    box-shadow: 0 0 .2em .2em #ccc;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 #home-header {
@@ -75,8 +80,8 @@ header li {
       height: 50px; 
       padding-left: 20px;
       outline: none;
-      box-shadow: 0 0 .2em .2em #ccc;
       border: 3px solid white;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 .search-buttons {
@@ -91,9 +96,10 @@ header li {
     border-radius: 50px;
     outline: none;
     background-color: white;
-    box-shadow: 0 0 .2em .2em #ccc;
     border: 3px solid white;
     margin-right: 50px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-family: 'Paytone One', sans-serif;
 }
 
 #button-content {
@@ -102,12 +108,13 @@ header li {
     border-radius: 50px;
     outline: none;
     background-color: white;
-    box-shadow: 0 0 .2em .2em #ccc;
     border: 3px solid white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-family: 'Paytone One', sans-serif;
 }
 
 #input placeholder {
-    padding-left: 20px;
+    padding-left: 200px;
 }
 
 #home-paragraph {
@@ -121,29 +128,9 @@ header li {
     justify-content: center;
 }
 
-.random-container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    margin-left: 130px;
-    background-color: white;
-    height:200px;
-    width: 700px;
-    border-radius: 8px;
-}
 
 .unordered-list {
     color: white;
-}
-
-#nasa-button {
-    display: flex;
-    justify-content: center;
-    margin:  50px auto;
-    background-color: white;
-    width: 500px;
-    height: 300px;
-    border-radius: 100px;
 }
 
 .modal {
@@ -161,16 +148,6 @@ header li {
     transform: translate(-50%, -50%);
 } 
 
-#spacex-button {
-    display: flex;
-    justify-content: center;
-    margin:  50px auto;
-    background-color: white;
-    width: 500px;
-    height: 300px;
-    border-radius: 100px;
-}
-
 button:focus {
     outline: none;
     box-shadow: none;
@@ -185,9 +162,49 @@ button:focus {
     background-color: blue;
 }
 
+.modals-container {
+    display: flex;
+   justify-content: center;
+}
+
 .modals {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  background-color: transparent;
+  height: 200px;
+  justify-items: center;
+  margin-top: 100px;
+  margin-bottom: -50px;
+  background-color: white;
+  width: 50%;
+  padding : 50px;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.random-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.random-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 100px;
+    gap: 20rem;
+}
+
+button {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.random-buttons-2 {
+    margin-top: -150px;
 }

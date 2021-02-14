@@ -14,8 +14,9 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Paytone+One&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1rem;\n    gap: 1rem;\n    margin-top: 80px;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;IACI,UAAU;IACV,SAAS;IACT,yBAAyB;IACzB,uLAAuL;IACvL,sIAAsI;IACtI,yBAAyB;IACzB,sFAAsF;AAC1F,6HAA6H;AAC7H;;AAEA;;IAEI,iBAAiB;IACjB,gBAAgB;IAChB,gCAAgC;IAChC,YAAY;IACZ,8BAA8B;AAClC;;AAEA;IACI,gBAAgB;IAChB,yCAAyC;AAC7C;;AAEA;IACI,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,gBAAgB;IAChB,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,eAAe;IACf,WAAW;IACX,eAAe;IACf,sBAAsB;IACtB,iBAAiB;IACjB,yCAAyC;IACzC,mCAAmC;AACvC;;AAEA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,uBAAuB;IACvB,UAAU;IACV,WAAW;IACX,uBAAuB;IACvB,mCAAmC;IACnC,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;MACM,cAAc;MACd,YAAY;MACZ,WAAW;MACX,gBAAgB;MAChB,mBAAmB;MACnB,YAAY;MACZ,kBAAkB;MAClB,aAAa;MACb,8BAA8B;MAC9B,uBAAuB;AAC7B;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;IACvB,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,eAAe;IACf,YAAY;IACZ,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,UAAU;IACV,sBAAsB;IACtB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;IAClB,gCAAgC;AACpC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,YAAY;IACZ,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,qCAAqC;IACrC,cAAS;IAAT,SAAS;IACT,gBAAgB;AACpB","sourcesContent":["body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 1rem;\n    margin-top: 80px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Paytone One', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Paytone One', sans-serif;\n    letter-spacing: 5px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Paytone One', sans-serif;\n    letter-spacing: 2px;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Paytone One', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Paytone One', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n    display: flex;\n   justify-content: center;\n}\n\n.modals {\n  display: grid;\n  grid-template-columns: repeat(1, 1fr);\n  grid-gap: 1rem;\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  justify-items: center;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    \n}\n\n.random-buttons {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    justify-items: center;\n    margin-top: 100px;\n    grid-gap: 20rem;\n    gap: 20rem;\n}\n\nbutton {\n    width: 300px;\n    height: 300px;\n    border-radius: 25px;\n    background-color: white;\n}\n\n.random-buttons-2 {\n    margin-top: -150px;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEA;IACI,UAAU;IACV,SAAS;IACT,yBAAyB;IACzB,uLAAuL;IACvL,sIAAsI;IACtI,yBAAyB;AAC7B,6HAA6H;AAC7H;;;AAGA;;IAEI,iBAAiB;IACjB,gBAAgB;IAChB,YAAY;IACZ,iBAAiB;AACrB;;AAEA;IACI,sCAAsC;AAC1C;;AAEA;IACI,gBAAgB;IAChB,sCAAsC;IACtC,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,YAAY;IACZ,gBAAgB;;;AAGpB;;AAEA;IACI,YAAY;IACZ,eAAe;IACf,WAAW;IACX,eAAe;IACf,sBAAsB;IACtB,iBAAiB;IACjB,sCAAsC;IACtC,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;IAClB,mBAAmB;IACnB,uBAAuB;IACvB,UAAU;IACV,WAAW;IACX,uBAAuB;IACvB,sCAAsC;AAC1C;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;MACM,cAAc;MACd,YAAY;MACZ,WAAW;MACX,gBAAgB;MAChB,mBAAmB;MACnB,YAAY;MACZ,kBAAkB;MAClB,aAAa;MACb,uBAAuB;MACvB,sCAAsC;AAC5C;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,uBAAuB;IACvB,kBAAkB;IAClB,sCAAsC;IACtC,sCAAsC;AAC1C;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,uBAAuB;IACvB,sCAAsC;IACtC,sCAAsC;AAC1C;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;AAC3B;;;AAGA;IACI,YAAY;AAChB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,UAAU;IACV,sBAAsB;IACtB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;IAClB,gCAAgC;AACpC;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,YAAY;IACZ,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;GACd,uBAAuB;AAC1B;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,cAAS;EAAT,SAAS;EACT,6BAA6B;EAC7B,aAAa;EACb,qBAAqB;EACrB,iBAAiB;EACjB,oBAAoB;EACpB,uBAAuB;EACvB,UAAU;EACV,cAAc;EACd,mBAAmB;EACnB,sCAAsC;AACxC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,WAAW;;AAEf;;AAEA;IACI,aAAa;IACb,qCAAqC;IACrC,qBAAqB;IACrB,iBAAiB;IACjB,eAAU;IAAV,UAAU;AACd;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');\n\nbody {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Paytone One', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Paytone One', sans-serif;\n    letter-spacing: 5px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Paytone One', sans-serif;\n    letter-spacing: 2px;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Paytone One', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Paytone One', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n    display: flex;\n   justify-content: center;\n}\n\n.modals {\n  display: grid;\n  grid-template-columns: repeat(1, 1fr);\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  justify-items: center;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    \n}\n\n.random-buttons {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    justify-items: center;\n    margin-top: 100px;\n    gap: 20rem;\n}\n\nbutton {\n    width: 300px;\n    height: 300px;\n    border-radius: 25px;\n    background-color: white;\n}\n\n.random-buttons-2 {\n    margin-top: -150px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -347,8 +348,6 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 
 const Random = () => {
-  var _tweets$randomNumber;
-
   const [tweets, setTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
   const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
 
@@ -360,65 +359,70 @@ const Random = () => {
   };
 
   const randomNumber = Math.floor(Math.random() * tweets.length);
-  const displayRandomTweet = (_tweets$randomNumber = tweets[randomNumber]) === null || _tweets$randomNumber === void 0 ? void 0 : _tweets$randomNumber.text;
+  const displayRandomTweet = tweets[randomNumber];
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-      id: "nasa-button",
-      name: "NASA",
-      onClick: handleClick,
-      children: "get NASA Tweet!"
-    }, void 0, false, {
+    class: "random-container",
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      class: "random-buttons",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        name: "NASA",
+        onClick: handleClick,
+        children: "get NASA Tweet!"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 13
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        name: "Spacex",
+        onClick: handleClick,
+        children: "Get SpaceX Tweet!"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 13
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        name: "elonmusk",
+        onClick: handleClick,
+        children: "Get Elon Musk Tweet!"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 13
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        class: "random-buttons-2",
+        name: "whitegavriel",
+        onClick: handleClick,
+        children: "Get Windows 96 Tweet!"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 13
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+        class: "random-buttons-2",
+        name: "DanMasonVapor",
+        onClick: handleClick,
+        children: "Get Dan Mason Tweet!"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 13
+      }, undefined), isOpen ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        className: "modal",
+        children: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.full_text
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 23
+      }, undefined) : null]
+    }, void 0, true, {
       fileName: _jsxFileName,
       lineNumber: 27,
-      columnNumber: 13
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-      id: "spacex-button",
-      name: "Spacex",
-      onClick: handleClick,
-      children: "Get SpaceX Tweet!"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 13
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-      id: "spacex-button",
-      name: "elonmusk",
-      onClick: handleClick,
-      children: "Get Elon Musk Tweet!"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 13
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-      id: "spacex-button",
-      name: "whitegavriel",
-      onClick: handleClick,
-      children: "Get Windows 96 Tweet!"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 13
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-      id: "spacex-button",
-      name: "DanMasonVapor",
-      onClick: handleClick,
-      children: "Get Dan Mason Tweet!"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 13
-    }, undefined), isOpen ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      className: "modal",
-      children: displayRandomTweet
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 23
-    }, undefined) : null]
-  }, void 0, true, {
+      columnNumber: 9
+    }, undefined)
+  }, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 26,
-    columnNumber: 9
+    columnNumber: 5
   }, undefined);
 };
 
@@ -476,7 +480,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -487,7 +491,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 35,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -495,35 +499,34 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 36,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
-      className: "modals",
       children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 42,
         columnNumber: 21
       }, undefined))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 40,
       columnNumber: 13
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 31,
+    lineNumber: 30,
     columnNumber: 9
   }, undefined);
 };
@@ -549,14 +552,30 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserModals.js";
 
 
+
 const UserModals = ({
   userTweet
 }) => {
+  const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-    children: userTweet.text
+    class: "modals-container",
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      class: "modals",
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+        children: userTweet.full_text
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 17
+      }, undefined)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 8,
     columnNumber: 9
   }, undefined);
 };

@@ -20,17 +20,19 @@ const Random = () => {
     };
 
     const randomNumber = Math.floor(Math.random() * tweets.length);
-    const displayRandomTweet = tweets[randomNumber]?.text;
+    const displayRandomTweet = tweets[randomNumber];
     
     return (
-        <div>
-            <button id="nasa-button" name="NASA" onClick={handleClick}>get NASA Tweet!</button>
-            <button id="spacex-button" name="Spacex" onClick={handleClick}>Get SpaceX Tweet!</button>
-            <button id="spacex-button" name="elonmusk" onClick={handleClick}>Get Elon Musk Tweet!</button>
-            <button id="spacex-button" name="whitegavriel" onClick={handleClick}>Get Windows 96 Tweet!</button>
-            <button id="spacex-button" name="DanMasonVapor" onClick={handleClick}>Get Dan Mason Tweet!</button>
-            {isOpen ? <div className="modal">{displayRandomTweet}</div> : null}
+    <div class="random-container">
+        <div class="random-buttons">
+            <button  name="NASA" onClick={handleClick}>get NASA Tweet!</button>
+            <button name="Spacex" onClick={handleClick}>Get SpaceX Tweet!</button>
+            <button name="elonmusk" onClick={handleClick}>Get Elon Musk Tweet!</button>
+            <button class="random-buttons-2" name="whitegavriel" onClick={handleClick}>Get Windows 96 Tweet!</button>
+            <button class="random-buttons-2"name="DanMasonVapor" onClick={handleClick}>Get Dan Mason Tweet!</button>
+            {isOpen ? <div className="modal">{displayRandomTweet?.full_text}</div> : null}
         </div>
+    </div>
     )
 }
 

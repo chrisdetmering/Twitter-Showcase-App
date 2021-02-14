@@ -8,7 +8,6 @@ const Search = () => {
     const [userTweets, setUserTweets] = useState([]);
     const [isOpen, setisOpen] = useState(false);
     
-
     const updateInput = (e) => {
         setInput(e.target.value);
         console.log(input);
@@ -38,7 +37,7 @@ const Search = () => {
                 </div>
             </div>
             
-            <section className="modals">
+            <section>
                 {userTweets.map((userTweet) => (
                     <UserModals userTweet={userTweet}></UserModals>
                 ))}
