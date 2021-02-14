@@ -1,10 +1,13 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
+import UserModals from './UserModals'
 
 const Search = () => {
     const [input, setInput] = useState('');
     const [userTweets, setUserTweets] = useState([]);
+    const [isOpen, setisOpen] = useState(false);
+    
 
     const updateInput = (e) => {
         setInput(e.target.value);
@@ -19,6 +22,8 @@ const Search = () => {
         .then((res) => setUserTweets(res.data))
         .catch((err) => console.log(err))
 
+        setisOpen(!isOpen);
+
         console.log(userTweets);
     }
 
@@ -32,11 +37,14 @@ const Search = () => {
                     <button id="button-content" type="submit">Content</button>
                 </div>
             </div>
-            {userTweets.map(user => (
-                <div className="search-modal">
-                    <div>{user[0]?.text}</div>
-                </div>
-            ))}
+            
+            <section className="modals">
+                {userTweets.map((userTweet) => (
+                    <UserModals userTweet={userTweet}></UserModals>
+                ))}
+            </section>
+            
+            
         </div>
     )
 }

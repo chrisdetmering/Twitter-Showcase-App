@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;IACI,UAAU;IACV,SAAS;IACT,yBAAyB;IACzB,uLAAuL;IACvL,sIAAsI;IACtI,yBAAyB;IACzB,sFAAsF;AAC1F,6HAA6H;AAC7H;;AAEA;;IAEI,iBAAiB;IACjB,gBAAgB;IAChB,gCAAgC;IAChC,YAAY;IACZ,8BAA8B;AAClC;;AAEA;IACI,gBAAgB;IAChB,yCAAyC;AAC7C;;AAEA;IACI,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,gBAAgB;IAChB,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,eAAe;IACf,WAAW;IACX,eAAe;IACf,sBAAsB;IACtB,iBAAiB;IACjB,yCAAyC;IACzC,mCAAmC;AACvC;;AAEA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,uBAAuB;IACvB,UAAU;IACV,WAAW;IACX,uBAAuB;IACvB,mCAAmC;IACnC,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;MACM,cAAc;MACd,YAAY;MACZ,WAAW;MACX,gBAAgB;MAChB,mBAAmB;MACnB,YAAY;MACZ,kBAAkB;MAClB,aAAa;MACb,8BAA8B;MAC9B,uBAAuB;AAC7B;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;IACvB,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,eAAe;IACf,YAAY;IACZ,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,UAAU;IACV,sBAAsB;IACtB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;IAClB,gCAAgC;AACpC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,YAAY;IACZ,UAAU;IACV,sBAAsB;AAC1B","sourcesContent":["body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1rem;\n    gap: 1rem;\n    margin-top: 80px;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;IACI,UAAU;IACV,SAAS;IACT,yBAAyB;IACzB,uLAAuL;IACvL,sIAAsI;IACtI,yBAAyB;IACzB,sFAAsF;AAC1F,6HAA6H;AAC7H;;AAEA;;IAEI,iBAAiB;IACjB,gBAAgB;IAChB,gCAAgC;IAChC,YAAY;IACZ,8BAA8B;AAClC;;AAEA;IACI,gBAAgB;IAChB,yCAAyC;AAC7C;;AAEA;IACI,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,gBAAgB;IAChB,mCAAmC;AACvC;;AAEA;IACI,YAAY;IACZ,eAAe;IACf,WAAW;IACX,eAAe;IACf,sBAAsB;IACtB,iBAAiB;IACjB,yCAAyC;IACzC,mCAAmC;AACvC;;AAEA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,uBAAuB;IACvB,UAAU;IACV,WAAW;IACX,uBAAuB;IACvB,mCAAmC;IACnC,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;MACM,cAAc;MACd,YAAY;MACZ,WAAW;MACX,gBAAgB;MAChB,mBAAmB;MACnB,YAAY;MACZ,kBAAkB;MAClB,aAAa;MACb,8BAA8B;MAC9B,uBAAuB;AAC7B;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;IACvB,kBAAkB;AACtB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,aAAa;IACb,uBAAuB;IACvB,8BAA8B;IAC9B,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,oBAAoB;IACpB,eAAe;IACf,YAAY;IACZ,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,UAAU;IACV,sBAAsB;IACtB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;IAClB,gCAAgC;AACpC;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,kBAAkB;IAClB,uBAAuB;IACvB,YAAY;IACZ,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,YAAY;IACZ,UAAU;IACV,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,qCAAqC;IACrC,cAAS;IAAT,SAAS;IACT,gBAAgB;AACpB","sourcesContent":["body {\n    padding: 0;\n    margin: 0;\n    background-color: #f4f4f4;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #d8d8d8;\n    background-image: url(\"https://www.transparenttextures.com/patterns/binding-dark.png\");\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    border-bottom: 2.5px solid white;\n    margin: auto;\n    box-shadow: 0 0 .1em .1em #ccc;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: Arial, Helvetica, sans-serif;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n}\n\n.home-container {\n    margin: 40px auto;\n    border-radius: 20px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    text-shadow: 1.5px 1.5px 1.5px #ccc;\n    box-shadow: 0 0 .2em .2em #ccc;\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      box-shadow: 0 0 .2em .2em #ccc;\n      border: 3px solid white;\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n    margin-right: 50px;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    box-shadow: 0 0 .2em .2em #ccc;\n    border: 3px solid white;\n}\n\n#input placeholder {\n    padding-left: 20px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n.random-container {\n    display: inline-flex;\n    flex-wrap: wrap;\n    margin: 50px;\n    margin-left: 130px;\n    background-color: white;\n    height:200px;\n    width: 700px;\n    border-radius: 8px;\n}\n\n.unordered-list {\n    color: white;\n}\n\n#nasa-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\n#spacex-button {\n    display: flex;\n    justify-content: center;\n    margin:  50px auto;\n    background-color: white;\n    width: 500px;\n    height: 300px;\n    border-radius: 100px;\n}\n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 1rem;\n    margin-top: 80px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -108,7 +108,7 @@ const App = () => {
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
@@ -117,36 +117,36 @@ const App = () => {
           component: _components_Home__WEBPACK_IMPORTED_MODULE_7__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
           path: "/Search",
           component: _components_Search__WEBPACK_IMPORTED_MODULE_5__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
           path: "/Random",
           component: _components_Random__WEBPACK_IMPORTED_MODULE_4__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 11
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 7
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 11,
+    lineNumber: 12,
     columnNumber: 5
   }, undefined);
 };
@@ -441,8 +441,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _UserModals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserModals */ "./src/components/UserModals.js");
 
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Search.js";
+
 
 
 
@@ -450,6 +452,7 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 const Search = () => {
   const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
   const [userTweets, setUserTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+  const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
 
   const updateInput = e => {
     setInput(e.target.value);
@@ -459,6 +462,7 @@ const Search = () => {
   const handleClick = e => {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
+    setisOpen(!isOpen);
     console.log(userTweets);
   };
 
@@ -472,7 +476,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 33,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -483,7 +487,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 36,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -491,44 +495,73 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 37,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 35,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 32,
       columnNumber: 13
-    }, undefined), userTweets.map(user => {
-      var _user$;
-
-      return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-        className: "search-modal",
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-          children: (_user$ = user[0]) === null || _user$ === void 0 ? void 0 : _user$.text
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 37,
-          columnNumber: 21
-        }, undefined)
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
+      className: "modals",
+      children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 17
-      }, undefined);
-    })]
+        lineNumber: 43,
+        columnNumber: 21
+      }, undefined))
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 13
+    }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 26,
+    lineNumber: 31,
     columnNumber: 9
   }, undefined);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Search);
+
+/***/ }),
+
+/***/ "./src/components/UserModals.js":
+/*!**************************************!*\
+  !*** ./src/components/UserModals.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserModals.js";
+
+
+const UserModals = ({
+  userTweet
+}) => {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    children: userTweet.text
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 9
+  }, undefined);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (UserModals);
 
 /***/ }),
 

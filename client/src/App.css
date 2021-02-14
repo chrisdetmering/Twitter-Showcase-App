@@ -184,3 +184,10 @@ button:focus {
     width: 50%;
     background-color: blue;
 }
+
+.modals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 80px;
+}
