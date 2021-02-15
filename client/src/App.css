@@ -173,7 +173,7 @@ button:focus {
   gap: 1rem;
   background-color: transparent;
   height: 200px;
-  justify-items: center;
+  overflow: hidden;
   margin-top: 100px;
   margin-bottom: -50px;
   background-color: white;

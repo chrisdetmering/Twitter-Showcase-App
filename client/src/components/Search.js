@@ -36,7 +36,7 @@ const Search = () => {
 
         axios
         .get(`/api/tweets/content?content=${input}`)
-        .then((res) => setContentTweets(res.data))
+        .then((res) => setContentTweets(res.data.statuses))
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
