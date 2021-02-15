@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 import UserModals from './UserModals'
+import ContentModals from './ContentModals'
 
 const Search = () => {
     const [input, setInput] = useState('');
@@ -10,7 +11,6 @@ const Search = () => {
     
     const updateInput = (e) => {
         setInput(e.target.value);
-        console.log(input);
     }
 
     const handleClick = (e) => {
@@ -22,8 +22,17 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
+    }
 
-        console.log(userTweets);
+    const handleClickContent = (e) => {
+        e.preventDefault();
+
+        axios
+        .get(`/api/tweets/cont?=${input}`)
+        .then((res) => setUserTweets(res.data))
+        .catch((err) => console.log(err))
+
+        setisOpen(!isOpen);
     }
 
     return (
@@ -33,13 +42,16 @@ const Search = () => {
 
                 <div class="search-buttons">
                     <button id="button-user" onClick={handleClick} type="submit">User</button>
-                    <button id="button-content" type="submit">Content</button>
+                    <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
                 </div>
             </div>
             
             <section>
                 {userTweets.map((userTweet) => (
                     <UserModals userTweet={userTweet}></UserModals>
+                ))}
+                 {userTweets.map((userTweet) => (
+                    <ContentModals userTweet={userTweet}></ContentModals>
                 ))}
             </section>
             

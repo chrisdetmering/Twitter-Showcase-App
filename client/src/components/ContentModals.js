@@ -1,16 +1,15 @@
 import React from 'react'
-import { useState } from 'react';
 
-const UserModals = ({ userTweet }) => {
-    
+const ContentModals = ({ userTweet }) => {
     return (
-        <div class="modals-container">
+        <div>
+            <div class="modals-container">
             <div class="modals">
                 <p>{userTweet.full_text}</p>
             </div>
         </div>
-       
+        </div>
     )
 }
 
-export default UserModals
+export default ContentModals
