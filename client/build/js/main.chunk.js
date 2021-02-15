@@ -570,25 +570,25 @@ const Search = () => {
       fileName: _jsxFileName,
       lineNumber: 49,
       columnNumber: 13
-    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
-      children: [userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 60,
         columnNumber: 21
-      }, undefined)), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentModals__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        contentTweet: contentTweet
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 63,
-        columnNumber: 21
-      }, undefined))]
-    }, void 0, true, {
+      }, undefined))
+    }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 58,
       columnNumber: 13
-    }, undefined)]
+    }, undefined), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentModals__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      contentTweet: contentTweet
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 21
+    }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
     lineNumber: 48,

@@ -55,14 +55,15 @@ const Search = () => {
                 </div>
             </div>
             
-            <section>
+            <div>
                 {userTweets.map((userTweet) => (
                     <UserModals userTweet={userTweet}></UserModals>
                 ))}
-                 {contentTweets.map((contentTweet) => (
+            </div>
+            
+                {contentTweets.map((contentTweet) => (
                     <ContentModals contentTweet={contentTweet}></ContentModals>
                 ))}
-            </section>
             
         </div>
     )
