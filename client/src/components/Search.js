@@ -8,10 +8,13 @@ const Search = () => {
     const [input, setInput] = useState('');
     const [userTweets, setUserTweets] = useState([]);
     const [isOpen, setisOpen] = useState(false);
+    const [contentTweets, setContentTweets] = useState([]);
     
     const updateInput = (e) => {
         setInput(e.target.value);
     }
+
+    // User Tweets
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -22,17 +25,23 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
+
+        console.log(userTweets)
     }
+
+    // Content Tweets
 
     const handleClickContent = (e) => {
         e.preventDefault();
 
         axios
-        .get(`/api/tweets/cont?=${input}`)
-        .then((res) => setUserTweets(res.data))
+        .get(`/api/tweets/content?content=${input}`)
+        .then((res) => setContentTweets(res.data))
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
+
+        console.log(contentTweets);
     }
 
     return (
@@ -50,11 +59,10 @@ const Search = () => {
                 {userTweets.map((userTweet) => (
                     <UserModals userTweet={userTweet}></UserModals>
                 ))}
-                 {userTweets.map((userTweet) => (
-                    <ContentModals userTweet={userTweet}></ContentModals>
+                 {contentTweets.map((contentTweet) => (
+                    <ContentModals contentTweet={contentTweet}></ContentModals>
                 ))}
             </section>
-            
             
         </div>
     )

@@ -174,24 +174,18 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 
 const ContentModals = ({
-  userTweet
+  contentTweet
 }) => {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    class: "modals-container",
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      class: "modals-container",
-      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-        class: "modals",
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
-          children: userTweet.full_text
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 8,
-          columnNumber: 17
-        }, undefined)
+      class: "modals",
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
+        children: contentTweet.full_text
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 7,
-        columnNumber: 13
+        columnNumber: 17
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
@@ -408,7 +402,7 @@ const Random = () => {
     e.preventDefault();
     const param = e.target.name;
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setTweets(res.data)).catch(err => console.log(err));
-    setIsOpen(!isOpen); //closes Modal
+    setIsOpen(!isOpen);
   };
 
   const randomNumber = Math.floor(Math.random() * tweets.length);
@@ -512,21 +506,26 @@ const Search = () => {
   const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
   const [userTweets, setUserTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
   const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const [contentTweets, setContentTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
   const updateInput = e => {
     setInput(e.target.value);
-  };
+  }; // User Tweets
+
 
   const handleClick = e => {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
     setisOpen(!isOpen);
-  };
+    console.log(userTweets);
+  }; // Content Tweets
+
 
   const handleClickContent = e => {
     e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets/cont?=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets/content?content=${input}`).then(res => setContentTweets(res.data)).catch(err => console.log(err));
     setisOpen(!isOpen);
+    console.log(contentTweets);
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -539,7 +538,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 50,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -550,7 +549,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 53,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -559,40 +558,40 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 54,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 52,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 49,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
       children: [userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 60,
         columnNumber: 21
-      }, undefined)), userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentModals__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        userTweet: userTweet
+      }, undefined)), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentModals__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        contentTweet: contentTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 63,
         columnNumber: 21
       }, undefined))]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 58,
       columnNumber: 13
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 39,
+    lineNumber: 48,
     columnNumber: 9
   }, undefined);
 };

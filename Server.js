@@ -30,12 +30,12 @@ server.get("/api/tweets",  (req, res) => {
     });
 });
 
-server.get("/api/tweets/cont", (req, res) => {
-    const contentString = req.query.content
+server.get("/api/tweets/content", (req, res) => {
+    const contentString = req.query.content;
 
     axios({
       method: 'get',
-      url: `https://api.twitter.com/1.1/search/tweets.jsonq=${contentString}&tweet_mode=extended`,
+      url: `https://api.twitter.com/1.1/search/tweets.json?q=${contentString}&tweet_mode=extended`,
       headers: {
         Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH"
       }
