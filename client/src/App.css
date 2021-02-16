@@ -167,13 +167,12 @@ button:focus {
 }
 
 .modals-container {
-    display: flex;
+   display: flex;
    justify-content: center;
 }
 
 .modals {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  
   gap: 1rem;
   background-color: transparent;
   height: 200px;
@@ -211,10 +210,13 @@ button {
 
 .modal-header {
     display: flex;
-}
-
-#modal-name {
-    margin-left: 10px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
 }
 
 .random-modal {
@@ -231,9 +233,13 @@ button {
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-#screen-name {
-    color: gray;
-    font-size: 14px;
-    margin-top: -60px;
-    margin-left: 51px;
+.stats-container {
+    display: flex;
+    column-gap: 16px;
+}
+
+.image-container {
+    display: flex;
+    column-gap: 16px;
+    white-space: nowrap;
 }

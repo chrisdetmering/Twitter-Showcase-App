@@ -6,22 +6,34 @@ const UserModals = ({ userTweet }) => {
         <div class="modals-container">
             <div class="modals">
                 <div class="modal-header">
-                    <div>
-                        <img src={userTweet.user.profile_image_url}/>
+                    <div class="image-container">
+                        <img src={userTweet.user.profile_image_url} />
+                        <div>{userTweet.user.name}</div>
                     </div>
-                    <div>
-                        <div id="modal-name">{userTweet.user.name}  </div>
-                        
+
+
+
+                    <div class="stats-container">
+                        <div><i class="fas fa-heart"></i>{userTweet.favorite_count}</div>
+                        <div><i class="fas fa-retweet"></i>{userTweet.retweet_count}</div>
                     </div>
-                    
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
-                <div>
-                    <div id="screen-name"> @{userTweet.user.screen_name}</div>
-                </div>
-                
-                
-                <p>{userTweet.full_text}</p>
-                
+                <section>
+
+                    <p>{userTweet.full_text}</p>
+                </section>
             </div>
         </div>
 
