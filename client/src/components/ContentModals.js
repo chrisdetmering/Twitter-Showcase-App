@@ -4,6 +4,8 @@ const ContentModals = ({ contentTweet }) => {
     return (
         <div class="modals-container">
             <div class="modals">
+                <img src={contentTweet.user.profile_image_url} />
+                <div>{userTweet.user.name}</div>
                 <p>{contentTweet.full_text}</p>
             </div>
         </div>

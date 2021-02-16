@@ -30,7 +30,7 @@ const Random = () => {
             <button name="elonmusk" onClick={handleClick}>Get Elon Musk Tweet!</button>
             <button class="random-buttons-2" name="whitegavriel" onClick={handleClick}>Get Windows 96 Tweet!</button>
             <button class="random-buttons-2"name="DanMasonVapor" onClick={handleClick}>Get Dan Mason Tweet!</button>
-            {isOpen ? <div className="modal">{displayRandomTweet?.full_text}</div> : null}
+            {isOpen ? <div className="random-modal">{displayRandomTweet?.full_text}</div> : null}
         </div>
     </div>
     )
