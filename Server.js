@@ -19,7 +19,6 @@ server.get("/api/tweets",  (req, res) => {
     url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}`,
     params: {
       tweet_mode: "extended",
-      retweeted_status: "full_text"
   },
     headers: {
       Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH",

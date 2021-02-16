@@ -187,12 +187,6 @@ const ContentModals = ({
         fileName: _jsxFileName,
         lineNumber: 7,
         columnNumber: 17
-      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-        children: userTweet.user.name
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 8,
-        columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         children: contentTweet.full_text
       }, void 0, false, {
@@ -665,29 +659,29 @@ const UserModals = ({
               class: "fas fa-heart"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 17,
+              lineNumber: 14,
               columnNumber: 30
             }, undefined), userTweet.favorite_count]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 17,
+            lineNumber: 14,
             columnNumber: 25
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("i", {
               class: "fas fa-retweet"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 18,
+              lineNumber: 15,
               columnNumber: 30
             }, undefined), userTweet.retweet_count]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 18,
+            lineNumber: 15,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 13,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
@@ -699,12 +693,12 @@ const UserModals = ({
           children: userTweet.full_text
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 19,
           columnNumber: 21
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 18,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
