@@ -17,7 +17,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Paytone+One&display=swap);"]);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nimg {\n    border-radius: 25px;\n}\n\n\n\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Noto Sans KR', sans-serif;\n    letter-spacing: 1px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n   display: flex;\n   justify-content: center;\n}\n\n.modals {\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    margin-top: 100px;\n}\n\n\n\n.modal-header {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    background-color: white;\n    height: 50px;\n    padding-right: 15px;\n    padding-bottom: 20px;\n    border-bottom: 1px solid gray;\n}\n\n.random-modal {\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n  height: 200px;\n  overflow: hidden;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.stats-container {\n    display: flex;\n    grid-column-gap: 16px;\n    column-gap: 16px;\n}\n\n.image-container {\n    display: flex;\n    grid-column-gap: 2px;\n    column-gap: 2px;\n    white-space: nowrap;\n}\n\n#screen-name {\n    color: gray;\n    font-size: 13px;\n}\n\n.random-modal {\n  grid-gap: 1rem;\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.card-container {\n    display: flex;\n    justify-content: center;\n}\n\n/* -----------------------------------------------------RANDOM BUTTONS------------------------------------------------------------ */\n\n#nasa-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#spacex-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#elon-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#gavriel-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#dan-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');\n\nbody {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nimg {\n    border-radius: 25px;\n}\n\n\n\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Noto Sans KR', sans-serif;\n    letter-spacing: 1px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n   display: flex;\n   justify-content: center;\n}\n\n.modals {\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    margin-top: 100px;\n}\n\n\n\n.modal-header {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    background-color: white;\n    height: 50px;\n    padding-right: 15px;\n    padding-bottom: 20px;\n    border-bottom: 1px solid gray;\n}\n\n.random-modal {\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n  height: 200px;\n  overflow: hidden;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.stats-container {\n    display: flex;\n    column-gap: 16px;\n}\n\n.image-container {\n    display: flex;\n    column-gap: 2px;\n    white-space: nowrap;\n}\n\n#screen-name {\n    color: gray;\n    font-size: 13px;\n}\n\n.random-modal {\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.card-container {\n    display: flex;\n    justify-content: center;\n}\n\n/* -----------------------------------------------------RANDOM BUTTONS------------------------------------------------------------ */\n\n#nasa-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#spacex-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#elon-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#gavriel-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}\n\n#dan-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nimg {\n    border-radius: 25px;\n}\n\n\n#input-button {\n    margin-left: 32%;\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Noto Sans KR', sans-serif;\n    letter-spacing: 1px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n   display: flex;\n   justify-content: center;\n}\n\n.modals {\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50vw;\n  padding : 35px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    margin-top: 100px;\n}\n\n\n\n.modal-header {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    background-color: white;\n    height: 50px;\n    padding-right: 15px;\n    padding-bottom: 20px;\n    border-bottom: 1px solid gray;\n}\n\n.random-modal {\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n  height: 200px;\n  overflow: hidden;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.stats-container {\n    display: flex;\n    grid-column-gap: 16px;\n    column-gap: 16px;\n}\n\n.image-container {\n    display: flex;\n    grid-column-gap: 2px;\n    column-gap: 2px;\n    white-space: nowrap;\n}\n\n#screen-name {\n    color: gray;\n    font-size: 13px;\n}\n\n.random-modal {\n  grid-gap: 1rem;\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.card-container {\n    display: flex;\n    justify-content: center;\n}\n\n/* -----------------------------------------------------RANDOM BUTTONS------------------------------------------------------------ */\n\n#nasa-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#spacex-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#elon-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#gavriel-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#dan-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.close-button-container {\n    margin-top: -20px;\n    margin-bottom: 20px;\n    display: flex;\n    justify-content: flex-end;\n    width: 100%\n}\n\n#modal-close-button {\n    border-radius: 25px;\n    font-size: 20px;\n    color: white;\n    background-color: red;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');\n\nbody {\n    padding: 0;\n    margin: 0;\n    background-color: #34c6da;\n    /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */\n    /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */\n    background-color: #0f6fbd;\n/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */\n}\n\nimg {\n    border-radius: 25px;\n}\n\n\n#input-button {\n    margin-left: 32%;\n}\n\nheader {\n    \n    padding-top: 30px;\n    min-height: 40px;\n    margin: auto;\n    max-width: 1100px;\n}\n\nhtml {\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\nheader h1 {\n    margin-top: -5px;\n    font-family: 'Noto Sans KR', sans-serif;\n    letter-spacing: 1px;\n}\n\nheader #branding {\n    float: left;\n    margin-left: 1.5%;\n    color: #ffffff;\n}\n\nheader nav {\n    float: right;\n    margin-top: 10px;\n    \n    \n}\n\nheader li {\n    color: white;\n    font-size: 25px;\n    float: left;\n    display: inline;\n    padding: 0 20px 0 20px;\n    margin-top: -25px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.home-container {\n    margin: 250px auto;\n    border-radius: 25px;\n    background-color: white;\n    width: 60%;\n    height: 60%;\n    border: 5px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n#home-header {\n    display: flex;\n    justify-content: center;\n    padding-top: 20px;\n    width: 100%;\n    \n}\n\n#input {\n      display: block;\n      margin: auto;\n      width: 50em;\n      margin-top: 50px;\n      border-radius: 50px;\n      height: 50px; \n      padding-left: 20px;\n      outline: none;\n      border: 3px solid white;\n      box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.search-buttons {\n    display: flex;\n    justify-content: center;\n    margin-top: 35px;\n}\n\n#button-user {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    margin-right: 50px;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#button-content {\n    width: 250px;\n    height: 50px;\n    border-radius: 50px;\n    outline: none;\n    background-color: white;\n    border: 3px solid white;\n    box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#input placeholder {\n    padding-left: 200px;\n}\n\n#home-paragraph {\n    font-size: 25px;\n    padding-left: 20px;\n}\n\n#second-home-paragraph {\n    font-size: 20px;\n    display: flex;\n    justify-content: center;\n}\n\n\n.unordered-list {\n    color: white;\n}\n\n.modal {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    width: 50%;\n    border: 1px solid grey;\n    margin: 0 auto;\n    padding: 25px;\n    margin-top: 10px;\n    background-color: grey;\n    color: white;\n    border-radius: 4px;\n    transform: translate(-50%, -50%);\n} \n\nbutton:focus {\n    outline: none;\n    box-shadow: none;\n}\n\n.search-modal {\n    margin: auto;\n    display: flex;\n    justify-content: center;\n    color: white;\n    width: 50%;\n    background-color: blue;\n}\n\n.modals-container {\n   display: flex;\n   justify-content: center;\n}\n\n.modals {\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50vw;\n  padding : 35px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    margin-top: 100px;\n}\n\n\n\n.modal-header {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    background-color: white;\n    height: 50px;\n    padding-right: 15px;\n    padding-bottom: 20px;\n    border-bottom: 1px solid gray;\n}\n\n.random-modal {\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n  height: 200px;\n  overflow: hidden;\n  background-color: white;\n  width: 50vw;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.stats-container {\n    display: flex;\n    column-gap: 16px;\n}\n\n.image-container {\n    display: flex;\n    column-gap: 2px;\n    white-space: nowrap;\n}\n\n#screen-name {\n    color: gray;\n    font-size: 13px;\n}\n\n.random-modal {\n  gap: 1rem;\n  background-color: transparent;\n  height: 200px;\n  overflow: hidden;\n  margin-top: 100px;\n  margin-bottom: -50px;\n  background-color: white;\n  width: 50%;\n  padding : 50px;\n  border-radius: 25px;\n  box-shadow: 0 3px 10px rgba(0,0,0,0.2);\n}\n\n.card-container {\n    display: flex;\n    justify-content: center;\n}\n\n/* -----------------------------------------------------RANDOM BUTTONS------------------------------------------------------------ */\n\n#nasa-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#spacex-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#elon-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#gavriel-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n#dan-button {\n    background-color: white;\n    padding: 25px;\n    border-radius: 15px;\n    font-family: 'Noto Sans KR', sans-serif;\n}\n\n.close-button-container {\n    margin-top: -20px;\n    margin-bottom: 20px;\n    display: flex;\n    justify-content: flex-end;\n    width: 100%\n}\n\n#modal-close-button {\n    border-radius: 25px;\n    font-size: 20px;\n    color: white;\n    background-color: red;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -479,7 +479,7 @@ const Random = () => {
         id: "nasa-button",
         name: "NASA",
         onClick: handleClick,
-        children: "get NASA Tweet!"
+        children: "Get NASA Tweet!"
       }, void 0, false, {
         fileName: _jsxFileName,
         lineNumber: 28,
@@ -532,6 +532,21 @@ const Random = () => {
       children: isOpen ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         className: "modals",
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          class: "close-button-container",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+            id: "modal-close-button",
+            onClick: () => setIsOpen(false),
+            children: "X"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 38,
+            columnNumber: 29
+          }, undefined)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 25
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "modal-header",
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             class: "image-container",
@@ -539,25 +554,25 @@ const Random = () => {
               src: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.profile_image_url
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 39,
+              lineNumber: 42,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               children: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.name
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 40,
+              lineNumber: 43,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               id: "screen-name",
               children: ["@ ", displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.screen_name]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 41,
+              lineNumber: 44,
               columnNumber: 33
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 38,
+            lineNumber: 41,
             columnNumber: 29
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             class: "stats-container",
@@ -566,34 +581,34 @@ const Random = () => {
                 class: "fas fa-heart"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 46,
+                lineNumber: 49,
                 columnNumber: 38
               }, undefined), displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.favorite_count]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 46,
+              lineNumber: 49,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("i", {
                 class: "fas fa-retweet"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 47,
+                lineNumber: 50,
                 columnNumber: 38
               }, undefined), displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.retweet_count]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 47,
+              lineNumber: 50,
               columnNumber: 33
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 45,
+            lineNumber: 48,
             columnNumber: 29
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 40,
           columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "random-modal-section",
@@ -601,12 +616,12 @@ const Random = () => {
             children: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.full_text
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 52,
+            lineNumber: 55,
             columnNumber: 29
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 51,
+          lineNumber: 54,
           columnNumber: 25
         }, undefined)]
       }, void 0, true, {
@@ -670,7 +685,6 @@ const Search = () => {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
     setisOpen(!isOpen);
-    console.log(userTweets);
   }; // Content Tweets
 
 
@@ -678,7 +692,6 @@ const Search = () => {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets/content?content=${input}`).then(res => setContentTweets(res.data.statuses)).catch(err => console.log(err));
     setisOpen(!isOpen);
-    console.log(contentTweets);
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -691,7 +704,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 46,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -702,7 +715,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 50,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -711,40 +724,40 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 51,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 49,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 45,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 57,
         columnNumber: 21
       }, undefined))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 55,
       columnNumber: 13
     }, undefined), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentModals__WEBPACK_IMPORTED_MODULE_4__["default"], {
       contentTweet: contentTweet
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 62,
       columnNumber: 21
     }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 48,
+    lineNumber: 44,
     columnNumber: 9
   }, undefined);
 };

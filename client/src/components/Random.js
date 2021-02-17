@@ -25,7 +25,7 @@ const Random = () => {
     return (
         <div>
             <div class="random-container">
-                <button id="nasa-button" name="NASA" onClick={handleClick}>get NASA Tweet!</button>
+                <button id="nasa-button" name="NASA" onClick={handleClick}>Get NASA Tweet!</button>
                 <button id="spacex-button" name="Spacex" onClick={handleClick}>Get SpaceX Tweet!</button>
                 <button id="elon-button" name="elonmusk" onClick={handleClick}>Get Elon Musk Tweet!</button>
                 <button id="gavriel-button" class="random-buttons-2" name="whitegavriel" onClick={handleClick}>Get Windows 96 Tweet!</button>
@@ -34,6 +34,9 @@ const Random = () => {
             <div class="card-container">
                 {isOpen ?
                     <div className="modals">
+                        <div class="close-button-container">
+                            <button id="modal-close-button" onClick={() => setIsOpen(false)}>X</button>
+                        </div>
                         <div class="modal-header">
                             <div class="image-container">
                                 <img src={displayRandomTweet?.user.profile_image_url} />
@@ -55,7 +58,7 @@ const Random = () => {
 
 
 
-
+                        
                     </div>
                 
                     : null}

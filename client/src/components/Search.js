@@ -25,8 +25,6 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
-
-        console.log(userTweets)
     }
 
     // Content Tweets
@@ -40,15 +38,14 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
-
-        console.log(contentTweets);
     }
 
     return (
         <div>
             <div>
-                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
-
+                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input}
+                />
+                
                 <div class="search-buttons">
                     <button id="button-user" onClick={handleClick} type="submit">User</button>
                     <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
