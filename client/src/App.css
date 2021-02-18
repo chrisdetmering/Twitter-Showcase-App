@@ -21,7 +21,6 @@ img {
 }
 
 header {
-    
     padding-top: 30px;
     min-height: 40px;
     margin: auto;
@@ -47,9 +46,9 @@ header #branding {
 header nav {
     float: right;
     margin-top: 10px;
-    
-    
 }
+
+
 
 header li {
     color: white;
@@ -82,7 +81,7 @@ header li {
 #input {
       display: block;
       margin: auto;
-      width: 50em;
+      width: 25vw;
       margin-top: 50px;
       border-radius: 50px;
       height: 50px; 
@@ -191,6 +190,7 @@ button:focus {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    column-gap: 10px;
 }
 
 
@@ -261,6 +261,8 @@ button:focus {
     padding: 25px;
     border-radius: 15px;
     font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
+    border: 1px solid black;
 }
 
 #spacex-button {
@@ -268,6 +270,7 @@ button:focus {
     padding: 25px;
     border-radius: 15px;
     font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid black;
 }
 
 #elon-button {
@@ -275,6 +278,8 @@ button:focus {
     padding: 25px;
     border-radius: 15px;
     font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid black;
+
 }
 
 #gavriel-button {
@@ -282,6 +287,8 @@ button:focus {
     padding: 25px;
     border-radius: 15px;
     font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid black;
+
 }
 
 #dan-button {
@@ -289,6 +296,8 @@ button:focus {
     padding: 25px;
     border-radius: 15px;
     font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid black;
+
 }
 
 .close-button-container {
@@ -304,4 +313,13 @@ button:focus {
     font-size: 20px;
     color: white;
     background-color: red;
+    border: 3px solid white;
 }
+
+/* -------------------------------------------------------------------------------------------------MEDIA QUERIES--------------------------------------------------------------------- */
+
+/* ------mobile phones------ */
+
+
+/* ----------------tablets/laptops--------------- */
+

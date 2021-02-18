@@ -25,6 +25,7 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
+        
     }
 
     // Content Tweets
