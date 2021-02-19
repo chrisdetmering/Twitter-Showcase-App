@@ -319,10 +319,23 @@ button:focus {
     border: 3px solid white;
 }
 
-/* -------------------------------------------------------------------------------------------------MEDIA QUERIES--------------------------------------------------------------------- */
+.nasa-image {
+    width: 80px;
+}
 
-/* ------mobile phones------ */
+.spacex-image {
+    width: 140px;
+}
 
+.musk-image {
+    width: 80px;
+}
 
-/* ----------------tablets/laptops--------------- */
+.windows96-image {
+    width: 70px;
+    margin-top: 10px;
+}
 
+.mason-image {
+    width: 80px;
+}
