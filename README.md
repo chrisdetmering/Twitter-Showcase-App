@@ -1,7 +1,7 @@
 # Twitter Showcase App
 
-*Front-end: React.js*
-*Back-end: Node/Express.js*
+*Full-stack application written in React for the Front-End, and Node/Express.js for the Back-End.*
+
 
 # Instructions
 
