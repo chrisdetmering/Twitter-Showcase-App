@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import UserCards from './UserCards'
-import ContentCards from './ContentCards'
+import UserCards from './UserCards';
+import ContentCards from './ContentCards';
 
 const Search = () => {
     const [input, setInput] = useState('');
@@ -14,7 +14,7 @@ const Search = () => {
         setInput(e.target.value);
     }
 
-    // User Tweets
+    // Username Tweets
     const handleClick = (e) => {
         e.preventDefault();
 
@@ -24,7 +24,8 @@ const Search = () => {
         .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
-        
+
+        input.match(' ') ? alert("Please write an appropriate user handle") : null;
     }
 
     // Content Tweets
