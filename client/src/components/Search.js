@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 import UserModals from './UserModals'
-import ContentModals from './ContentModals'
+import ContentCards from './ContentCards'
 
 const Search = () => {
     const [input, setInput] = useState('');
@@ -57,7 +57,7 @@ const Search = () => {
             </div>
             
                 {contentTweets.map((contentTweet) => (
-                    <ContentModals contentTweet={contentTweet}></ContentModals>
+                    <ContentCards contentTweet={contentTweet}></ContentCards>
                 ))}
             </div>
     )
