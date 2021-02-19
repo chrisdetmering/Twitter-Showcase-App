@@ -713,7 +713,7 @@ const Search = () => {
           id: "button-user",
           onClick: handleClick,
           type: "submit",
-          children: "Username"
+          children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 49,

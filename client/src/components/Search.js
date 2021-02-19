@@ -46,7 +46,7 @@ const Search = () => {
                 <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
                 
                 <div class="search-buttons">
-                    <button id="button-user" onClick={handleClick} type="submit">Username</button>
+                    <button id="button-user" onClick={handleClick} type="submit">User</button>
                     <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
                 </div>
             </div>
