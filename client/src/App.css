@@ -7,7 +7,7 @@ body {
     background-color: #34c6da;
     /* background: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); */
     /* background: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
-    background-color: #0f6fbd;
+    background-color: #18191a;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -64,10 +64,10 @@ header li {
     margin: 250px auto;
     border-radius: 25px;
     background-color: white;
-    width: 60%;
+    width: 40vw;
     height: 60%;
     border: 5px solid white;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
 }
 
 #home-header {
@@ -89,6 +89,8 @@ header li {
       outline: none;
       border: 3px solid white;
       box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 20px;
 }
 
 .search-buttons {

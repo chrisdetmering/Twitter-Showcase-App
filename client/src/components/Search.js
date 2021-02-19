@@ -62,8 +62,7 @@ const Search = () => {
                 {contentTweets.map((contentTweet) => (
                     <ContentModals contentTweet={contentTweet}></ContentModals>
                 ))}
-            
-        </div>
+            </div>
     )
 }
 

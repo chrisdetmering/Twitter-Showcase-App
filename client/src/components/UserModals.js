@@ -16,7 +16,6 @@ const UserModals = ({ userTweet }) => {
                         <div><i class="fas fa-heart"></i>{userTweet.favorite_count}</div>
                         <div><i class="fas fa-retweet"></i>{userTweet.retweet_count}</div>
                     </div>
-                    
                 </div>
                 
                 <section>
