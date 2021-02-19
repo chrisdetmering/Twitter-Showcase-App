@@ -95,6 +95,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Search */ "./src/components/Search.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Home */ "./src/components/Home.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './Footer'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\App.js";
 
@@ -105,12 +106,13 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 
 
+
 const App = () => {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
@@ -119,36 +121,40 @@ const App = () => {
           component: _components_Home__WEBPACK_IMPORTED_MODULE_7__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
           path: "/Search",
           component: _components_Search__WEBPACK_IMPORTED_MODULE_5__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
           path: "/Random",
           component: _components_Random__WEBPACK_IMPORTED_MODULE_4__["default"]
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 11
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 7
-    }, undefined)
-  }, void 0, false, {
+    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(!(function webpackMissingModule() { var e = new Error("Cannot find module './Footer'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {}, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }, undefined)]
+  }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 12,
+    lineNumber: 13,
     columnNumber: 5
   }, undefined);
 };

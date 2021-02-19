@@ -5,6 +5,7 @@ import Random from './components/Random';
 import Search from './components/Search';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
+import Footer from "./Footer"
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/Random" component={Random} />
         </Switch>
       </Router>
+      <Footer />
     </div>
   )
 }
