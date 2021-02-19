@@ -15,7 +15,6 @@ const Search = () => {
     }
 
     // User Tweets
-
     const handleClick = (e) => {
         e.preventDefault();
 
@@ -29,7 +28,6 @@ const Search = () => {
     }
 
     // Content Tweets
-
     const handleClickContent = (e) => {
         e.preventDefault();
 
@@ -44,8 +42,7 @@ const Search = () => {
     return (
         <div>
             <div>
-                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input}
-                />
+                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
                 
                 <div class="search-buttons">
                     <button id="button-user" onClick={handleClick} type="submit">User</button>

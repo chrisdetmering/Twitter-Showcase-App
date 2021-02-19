@@ -23,7 +23,6 @@ const UserModals = ({ userTweet }) => {
                 </section>
             </div>
         </div>
-
     )
 }
 

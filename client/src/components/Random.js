@@ -54,16 +54,9 @@ const Random = () => {
                         <div class="random-modal-section">
                             <p>{displayRandomTweet?.full_text}</p>
                         </div>
-
-
-
-
-                        
                     </div>
-                
-                    : null}
+                : null}
             </div>
-                
         </div>
     )
 }
