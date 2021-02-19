@@ -25,6 +25,8 @@ const Search = () => {
 
         setisOpen(!isOpen);
 
+        console.log(userTweets)
+
         input.match(' ') ? alert("Please write an appropriate user handle") : null;
     }
 
