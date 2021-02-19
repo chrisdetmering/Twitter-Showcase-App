@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\ContentCards.js";
 
 
-const ContentModals = ({
+const ContentCards = ({
   contentTweet
 }) => {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -264,7 +264,7 @@ const ContentModals = ({
   }, undefined);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ContentModals);
+/* harmony default export */ __webpack_exports__["default"] = (ContentCards);
 
 /***/ }),
 
@@ -783,7 +783,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserCards.js";
 
 
-const UserModals = ({
+const UserCards = ({
   userTweet
 }) => {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -879,7 +879,7 @@ const UserModals = ({
   }, undefined);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (UserModals);
+/* harmony default export */ __webpack_exports__["default"] = (UserCards);
 
 /***/ }),
 

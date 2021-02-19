@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserModals = ({ userTweet }) => {
+const UserCards = ({ userTweet }) => {
 
     return (
         <div class="modals-container">
@@ -26,4 +26,4 @@ const UserModals = ({ userTweet }) => {
     )
 }
 
-export default UserModals
+export default UserCards

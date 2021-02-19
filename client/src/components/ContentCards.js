@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContentModals = ({ contentTweet }) => {
+const ContentCards = ({ contentTweet }) => {
     return (
         <div class="modals-container">
             <div class="modals">
@@ -23,4 +23,4 @@ const ContentModals = ({ contentTweet }) => {
     )
 }
 
-export default ContentModals
+export default ContentCards
