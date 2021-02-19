@@ -660,7 +660,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _UserModals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserModals */ "./src/components/UserModals.js");
+/* harmony import */ var _UserCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserCards */ "./src/components/UserCards.js");
 /* harmony import */ var _ContentCards__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContentCards */ "./src/components/ContentCards.js");
 
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Search.js";
@@ -712,7 +712,7 @@ const Search = () => {
           id: "button-user",
           onClick: handleClick,
           type: "submit",
-          children: "User"
+          children: "Username"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 48,
@@ -737,7 +737,7 @@ const Search = () => {
       lineNumber: 44,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserModals__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
@@ -766,10 +766,10 @@ const Search = () => {
 
 /***/ }),
 
-/***/ "./src/components/UserModals.js":
-/*!**************************************!*\
-  !*** ./src/components/UserModals.js ***!
-  \**************************************/
+/***/ "./src/components/UserCards.js":
+/*!*************************************!*\
+  !*** ./src/components/UserCards.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -780,7 +780,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserModals.js";
+var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserCards.js";
 
 
 const UserModals = ({
