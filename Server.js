@@ -4,6 +4,11 @@ const axios = require('axios');
 const { json } = require('express');
 const path = require('path');
 var cors = require('cors')
+const dotenv = require("dotenv");
+dotenv.config();
+let port = process.env.PORT || 3002;
+
+const access_token = process.env.TOKEN;
 
 server.use(express.static(path.join('client', 'build')));
 
@@ -21,8 +26,8 @@ server.get("/api/tweets",  (req, res) => {
       tweet_mode: "extended",
   },
     headers: {
-      Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH",
-    }
+      Authorization: `Bearer ${access_token}`,
+    },
   })
     .then(function (response) {
       res.json(response.data);
@@ -40,8 +45,8 @@ server.get("/api/tweets/content", (req, res) => {
       method: 'get',
       url: `https://api.twitter.com/1.1/search/tweets.json?q=${contentString}&tweet_mode=extended`,
       headers: {
-        Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAF9BLwEAAAAAwqPxkv2I3cwhqbqHlTkx1pvOHWU%3D8inbjXB0afn1AB8uWmA93PDBTJ0rJLn1KpOfjcgXUOQ82woUkH"
-      }
+        Authorization: `Bearer ${access_token}`,
+      },
     })
     .then(function (response) {
       res.json(response.data);
@@ -52,6 +57,4 @@ server.get("/api/tweets/content", (req, res) => {
     });
 })
 
-server.listen(3002, () => {
-  console.log("Server is up and listening on 3002...")
-})
+server.listen(port, () => console.log(`server started on port ${port}`));
