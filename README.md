@@ -1,6 +1,7 @@
 # Twitter Showcase App
 
-*Written in React JS, HTML and CSS*
+*Front-end: React.js*
+*Back-end: Node/Express.js*
 
 # Instructions
 
