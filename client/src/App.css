@@ -198,7 +198,7 @@ button:focus {
 }
 
 .modals {
-  height: 200px;
+  /* height: 200px; */
   overflow: hidden;
   margin-top: 100px;
   margin-bottom: -50px;
@@ -207,6 +207,7 @@ button:focus {
   padding : 35px;
   border-radius: 25px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  /* object-fit: contain; */
 }
 
 .random-container {
@@ -228,6 +229,8 @@ button:focus {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
 }
+
+
 
 .random-modal {
   display: flex;
@@ -251,11 +254,13 @@ button:focus {
     display: flex;
     column-gap: 2px;
     white-space: nowrap;
+   
 }
 
 #screen-name {
     color: gray;
     font-size: 13px;
+    
 }
 
 .random-modal {
@@ -358,4 +363,13 @@ button:focus {
 
 .mason-image {
     width: 80px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+#card-image {
+    width: 400px;
 }

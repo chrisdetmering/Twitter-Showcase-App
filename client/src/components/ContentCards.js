@@ -1,6 +1,8 @@
 import React from 'react'
 
 const ContentCards = ({ contentTweet }) => {
+    const imageTweet = contentTweet.retweeted_status?.extended_entities?.media[0].media_url
+    
     return (
         <div class="modals-container">
             <div class="modals">
@@ -17,6 +19,9 @@ const ContentCards = ({ contentTweet }) => {
                 </div>
 
                 <p>{contentTweet.full_text}</p>
+                <div class="card-image">
+                        <img id="card-image" src={imageTweet} />
+                    </div>
             </div>
         </div>
 

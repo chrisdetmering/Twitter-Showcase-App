@@ -2,6 +2,10 @@ import React from 'react'
 
 const UserCards = ({ userTweet }) => {
 
+    const imageTweet = userTweet.retweeted_status?.extended_entities?.media[0].media_url
+    console.log(imageTweet)
+    
+
     return (
         <div class="modals-container">
             <div class="modals">
@@ -10,6 +14,7 @@ const UserCards = ({ userTweet }) => {
                         <img src={userTweet.user.profile_image_url} />
                         <div>{userTweet.user.name}</div>
                         <div id="screen-name">@ {userTweet.user.screen_name}</div>
+                        
                     </div>
                     
                     <div class="stats-container">
@@ -20,6 +25,9 @@ const UserCards = ({ userTweet }) => {
                 
                 <section>
                     <p>{userTweet.full_text}</p>
+                    <div class="card-image">
+                        <img id="card-image" src={imageTweet} />
+                    </div>
                 </section>
             </div>
         </div>
