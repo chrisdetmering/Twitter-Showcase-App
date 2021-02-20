@@ -830,6 +830,7 @@ const Search = () => {
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        isOpen: isOpen,
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
@@ -882,7 +883,7 @@ const UserCards = ({
   var _userTweet$retweeted_, _userTweet$retweeted_2;
 
   const imageTweet = (_userTweet$retweeted_ = userTweet.retweeted_status) === null || _userTweet$retweeted_ === void 0 ? void 0 : (_userTweet$retweeted_2 = _userTweet$retweeted_.extended_entities) === null || _userTweet$retweeted_2 === void 0 ? void 0 : _userTweet$retweeted_2.media[0].media_url;
-  const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     class: "modals-container",
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {

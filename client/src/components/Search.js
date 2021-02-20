@@ -57,7 +57,7 @@ const Search = () => {
 
             <div>
                 {userTweets.map((userTweet) => (
-                    <UserCards userTweet={userTweet}></UserCards>
+                    <UserCards isOpen={isOpen} userTweet={userTweet}></UserCards>
                 ))}
             </div>
 

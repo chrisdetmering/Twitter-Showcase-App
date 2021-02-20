@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 
-const UserCards = ({ userTweet }) => {
+const UserCards = ({ userTweet,  }) => {
     const imageTweet = userTweet.retweeted_status?.extended_entities?.media[0].media_url
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setisOpen] = useState(false);
 
 
     return (
