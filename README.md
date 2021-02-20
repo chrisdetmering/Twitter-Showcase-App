@@ -9,7 +9,11 @@ To retrieve twitter time-lines from specific users, type in their correct twitte
 
 You can Visit the App here
 
+![welcome](https://user-images.githubusercontent.com/55517078/108606092-09133e00-7386-11eb-8cd2-23905089602f.JPG)
 
+![elon](https://user-images.githubusercontent.com/55517078/108606116-39f37300-7386-11eb-8bc2-113265194ca3.JPG)
+
+![nasa](https://user-images.githubusercontent.com/55517078/108606122-44157180-7386-11eb-8b3b-61b72dae5044.JPG)
 
 # Summary 
 
