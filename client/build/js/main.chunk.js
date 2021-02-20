@@ -310,20 +310,20 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
         children: "Welcome!"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 8,
-        columnNumber: 21
+        lineNumber: 7,
+        columnNumber: 17
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         children: "This is a simple web application that utilizes the Twitter API to retrieve twitter timeline information. You can search based on user or content in the search page, or utilize the random tweet page to pull a random tweet from the selected choices."
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 8,
         columnNumber: 21
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         id: "second-home-paragraph",
         children: "Hope you enjoy!"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 13,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
