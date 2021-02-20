@@ -18,3 +18,6 @@ You can Visit the App here
 # Summary 
 
 This a Full-Stack application that utilizes express.js for the Back-End server to grab and store data from the official Twitter API, while using React to grab that data from the Back-End and displaying it to the Front-End.
+This was the first Full-stack application I have created, which taught me how to use a Back-End framework like Express and how it connects with the Front-End. Learning about HTTP requests was really interesting as it plays a huge role in web development and the Internet in general.
+
+A problem I faced during the creation of this application was
