@@ -9,7 +9,7 @@ const Search = () => {
     const [userTweets, setUserTweets] = useState([]);
     const [isOpen, setisOpen] = useState(false);
     const [contentTweets, setContentTweets] = useState([]);
-    
+
     const updateInput = (e) => {
         setInput(e.target.value);
     }
@@ -19,14 +19,14 @@ const Search = () => {
         e.preventDefault();
 
         axios
-        .get(`/api/tweets?search=${input}`)
-        .then((res) => setUserTweets(res.data))
-        .catch((err) => console.log(err))
+            .get(`/api/tweets?search=${input}`)
+            .then((res) => setUserTweets(res.data))
+            .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
 
         console.log(userTweets)
-        
+
 
         input.match(' ') ? alert("Please write an appropriate user handle") : null;
     }
@@ -36,9 +36,9 @@ const Search = () => {
         e.preventDefault();
 
         axios
-        .get(`/api/tweets/content?content=${input}`)
-        .then((res) => setContentTweets(res.data.statuses))
-        .catch((err) => console.log(err))
+            .get(`/api/tweets/content?content=${input}`)
+            .then((res) => setContentTweets(res.data.statuses))
+            .catch((err) => console.log(err))
 
         setisOpen(!isOpen);
     }
@@ -48,22 +48,23 @@ const Search = () => {
             <div>
                 <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
                 
-                <div class="search-buttons">
-                    <button id="button-user" onClick={handleClick} type="submit">User</button>
-                    <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
-                </div>
+                    <div class="search-buttons">
+                        <button id="button-user" onClick={handleClick} type="submit">User</button>
+                        <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
+                    </div>
+                    
             </div>
-            
+
             <div>
                 {userTweets.map((userTweet) => (
                     <UserCards userTweet={userTweet}></UserCards>
                 ))}
             </div>
-            
-                {contentTweets.map((contentTweet) => (
-                    <ContentCards contentTweet={contentTweet}></ContentCards>
-                ))}
-            </div>
+
+            {contentTweets.map((contentTweet) => (
+                <ContentCards contentTweet={contentTweet}></ContentCards>
+            ))}
+        </div>
     )
 }
 

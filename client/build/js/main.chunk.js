@@ -808,7 +808,7 @@ const Search = () => {
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 52,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
           onClick: handleClickContent,
@@ -817,12 +817,12 @@ const Search = () => {
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 53,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 51,
-        columnNumber: 17
+        columnNumber: 21
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
@@ -833,19 +833,19 @@ const Search = () => {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 59,
+        lineNumber: 60,
         columnNumber: 21
       }, undefined))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 58,
       columnNumber: 13
     }, undefined), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentCards__WEBPACK_IMPORTED_MODULE_4__["default"], {
       contentTweet: contentTweet
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 21
+      lineNumber: 65,
+      columnNumber: 17
     }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
@@ -875,13 +875,14 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserCards.js";
 
 
+
 const UserCards = ({
   userTweet
 }) => {
   var _userTweet$retweeted_, _userTweet$retweeted_2;
 
   const imageTweet = (_userTweet$retweeted_ = userTweet.retweeted_status) === null || _userTweet$retweeted_ === void 0 ? void 0 : (_userTweet$retweeted_2 = _userTweet$retweeted_.extended_entities) === null || _userTweet$retweeted_2 === void 0 ? void 0 : _userTweet$retweeted_2.media[0].media_url;
-  console.log(imageTweet);
+  const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     class: "modals-container",
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -895,25 +896,25 @@ const UserCards = ({
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 14,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             children: userTweet.user.name
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 15,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             id: "screen-name",
             children: ["@ ", userTweet.user.screen_name]
           }, void 0, true, {
             fileName: _jsxFileName,
             lineNumber: 16,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 13,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "stats-container",
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -922,41 +923,41 @@ const UserCards = ({
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 21,
-              columnNumber: 30
+              columnNumber: 34
             }, undefined), userTweet.favorite_count]
           }, void 0, true, {
             fileName: _jsxFileName,
             lineNumber: 21,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("i", {
               class: "fas fa-retweet"
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 22,
-              columnNumber: 30
+              columnNumber: 34
             }, undefined), userTweet.retweet_count]
           }, void 0, true, {
             fileName: _jsxFileName,
             lineNumber: 22,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 20,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 12,
-        columnNumber: 17
+        columnNumber: 21
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("section", {
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
           children: userTweet.full_text
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 27,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "card-image",
           children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("img", {
@@ -965,22 +966,22 @@ const UserCards = ({
           }, void 0, false, {
             fileName: _jsxFileName,
             lineNumber: 29,
-            columnNumber: 25
+            columnNumber: 29
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 28,
-          columnNumber: 21
+          columnNumber: 25
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 26,
-        columnNumber: 17
+        columnNumber: 21
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
       lineNumber: 11,
-      columnNumber: 13
+      columnNumber: 17
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
