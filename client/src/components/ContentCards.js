@@ -1,11 +1,9 @@
 import React from 'react'
-import { useState } from 'react';
 
 const ContentCards = ({ contentTweet }) => {
     const imageTweet = contentTweet.retweeted_status?.extended_entities?.media[0].media_url
     
     return (
-        
         <div class="modals-container">
             <div class="modals">
                 <div class="modal-header">

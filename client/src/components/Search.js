@@ -25,6 +25,7 @@ const Search = () => {
             .catch((err) => console.log(err))
 
         input.match(' ') ? alert("Please write an appropriate user handle") : null
+        console.log(userTweets)
     }
 
     // Content Tweets
