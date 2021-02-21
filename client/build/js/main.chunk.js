@@ -174,12 +174,14 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\ContentCards.js";
 
 
+
 const ContentCards = ({
   contentTweet
 }) => {
   var _contentTweet$retweet, _contentTweet$retweet2;
 
   const imageTweet = (_contentTweet$retweet = contentTweet.retweeted_status) === null || _contentTweet$retweet === void 0 ? void 0 : (_contentTweet$retweet2 = _contentTweet$retweet.extended_entities) === null || _contentTweet$retweet2 === void 0 ? void 0 : _contentTweet$retweet2.media[0].media_url;
+  const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     class: "modals-container",
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -192,25 +194,25 @@ const ContentCards = ({
             src: contentTweet.user.profile_image_url
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 11,
+            lineNumber: 14,
             columnNumber: 25
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             children: contentTweet.user.name
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 12,
+            lineNumber: 15,
             columnNumber: 25
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             id: "screen-name",
             children: ["@ ", contentTweet.user.screen_name]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 13,
+            lineNumber: 16,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 10,
+          lineNumber: 13,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "stats-container",
@@ -219,40 +221,40 @@ const ContentCards = ({
               class: "fas fa-heart"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 16,
+              lineNumber: 19,
               columnNumber: 30
             }, undefined), contentTweet.favorite_count]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 16,
+            lineNumber: 19,
             columnNumber: 25
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("i", {
               class: "fas fa-retweet"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 17,
+              lineNumber: 20,
               columnNumber: 30
             }, undefined), contentTweet.retweet_count]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 17,
+            lineNumber: 20,
             columnNumber: 25
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 18,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 9,
+        lineNumber: 12,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         children: contentTweet.full_text
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 24,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "card-image",
@@ -261,22 +263,22 @@ const ContentCards = ({
           src: imageTweet
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 26,
           columnNumber: 25
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 25,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 11,
       columnNumber: 13
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 10,
     columnNumber: 9
   }, undefined);
 };
@@ -763,7 +765,7 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 const Search = () => {
   const [input, setInput] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
   const [userTweets, setUserTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
-  const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   const [contentTweets, setContentTweets] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
   const updateInput = e => {
@@ -774,16 +776,14 @@ const Search = () => {
   const handleClick = e => {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${input}`).then(res => setUserTweets(res.data)).catch(err => console.log(err));
-    setisOpen(!isOpen);
-    console.log(userTweets);
     input.match(' ') ? alert("Please write an appropriate user handle") : null;
   }; // Content Tweets
 
 
   const handleClickContent = e => {
     e.preventDefault();
+    setUserTweets([]);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets/content?content=${input}`).then(res => setContentTweets(res.data.statuses)).catch(err => console.log(err));
-    setisOpen(!isOpen);
   };
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -796,7 +796,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 46,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -807,26 +807,27 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 52,
-          columnNumber: 25
+          lineNumber: 49,
+          columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
           onClick: handleClickContent,
+          value: input,
           type: "submit",
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 53,
-          columnNumber: 25
+          lineNumber: 50,
+          columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 21
+        lineNumber: 48,
+        columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 45,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -834,23 +835,23 @@ const Search = () => {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 60,
+        lineNumber: 56,
         columnNumber: 21
       }, undefined))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 54,
       columnNumber: 13
     }, undefined), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentCards__WEBPACK_IMPORTED_MODULE_4__["default"], {
       contentTweet: contentTweet
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 61,
       columnNumber: 17
     }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 47,
+    lineNumber: 44,
     columnNumber: 9
   }, undefined);
 };
@@ -878,12 +879,12 @@ var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase
 
 
 const UserCards = ({
-  userTweet
+  userTweet,
+  isOpen
 }) => {
   var _userTweet$retweeted_, _userTweet$retweeted_2;
 
   const imageTweet = (_userTweet$retweeted_ = userTweet.retweeted_status) === null || _userTweet$retweeted_ === void 0 ? void 0 : (_userTweet$retweeted_2 = _userTweet$retweeted_.extended_entities) === null || _userTweet$retweeted_2 === void 0 ? void 0 : _userTweet$retweeted_2.media[0].media_url;
-  const [isOpen, setisOpen] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     class: "modals-container",
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -986,7 +987,7 @@ const UserCards = ({
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 10,
+    lineNumber: 9,
     columnNumber: 9
   }, undefined);
 };

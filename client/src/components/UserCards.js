@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 
-const UserCards = ({ userTweet,  }) => {
+const UserCards = ({ userTweet, isOpen }) => {
     const imageTweet = userTweet.retweeted_status?.extended_entities?.media[0].media_url
-    const [isOpen, setisOpen] = useState(false);
-
+    
 
     return (
         <div class="modals-container">
+            
                 <div class="modals">
                     <div class="modal-header">
                         <div class="image-container">
@@ -30,6 +30,7 @@ const UserCards = ({ userTweet,  }) => {
                         </div>
                     </section>
                 </div>
+                
         </div>
     )
 }

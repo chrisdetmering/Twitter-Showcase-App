@@ -7,7 +7,7 @@ import ContentCards from './ContentCards';
 const Search = () => {
     const [input, setInput] = useState('');
     const [userTweets, setUserTweets] = useState([]);
-    const [isOpen, setisOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [contentTweets, setContentTweets] = useState([]);
 
     const updateInput = (e) => {
@@ -23,36 +23,32 @@ const Search = () => {
             .then((res) => setUserTweets(res.data))
             .catch((err) => console.log(err))
 
-        setisOpen(!isOpen);
+        
 
-        console.log(userTweets)
-
-
-        input.match(' ') ? alert("Please write an appropriate user handle") : null;
+        input.match(' ') ? alert("Please write an appropriate user handle") : null
     }
 
     // Content Tweets
     const handleClickContent = (e) => {
         e.preventDefault();
 
-        axios
-            .get(`/api/tweets/content?content=${input}`)
-            .then((res) => setContentTweets(res.data.statuses))
-            .catch((err) => console.log(err))
-
-        setisOpen(!isOpen);
-    }
+        setUserTweets([]);
+        
+            axios
+                .get(`/api/tweets/content?content=${input}`)
+                .then((res) => setContentTweets(res.data.statuses))
+                .catch((err) => console.log(err))
+        }
 
     return (
         <div>
             <div>
                 <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
-                
-                    <div class="search-buttons">
-                        <button id="button-user" onClick={handleClick} type="submit">User</button>
-                        <button id="button-content" onClick={handleClickContent} type="submit">Content</button>
-                    </div>
-                    
+
+                <div class="search-buttons">
+                    <button id="button-user" onClick={handleClick} type="submit">User</button>
+                    <button id="button-content" onClick={handleClickContent} value={input} type="submit">Content</button>
+                </div>
             </div>
 
             <div>
