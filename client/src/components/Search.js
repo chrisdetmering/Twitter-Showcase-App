@@ -15,6 +15,7 @@ const Search = () => {
     }
 
     // Username Tweets
+    
     const handleClick = (e) => {
         e.preventDefault();
 
@@ -23,12 +24,11 @@ const Search = () => {
             .then((res) => setUserTweets(res.data))
             .catch((err) => console.log(err))
 
-        
-
         input.match(' ') ? alert("Please write an appropriate user handle") : null
     }
 
     // Content Tweets
+    
     const handleClickContent = (e) => {
         e.preventDefault();
 

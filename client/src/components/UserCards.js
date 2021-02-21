@@ -4,7 +4,6 @@ import { useState } from 'react';
 const UserCards = ({ userTweet, isOpen }) => {
     const imageTweet = userTweet.retweeted_status?.extended_entities?.media[0].media_url
     
-
     return (
         <div class="modals-container">
             
@@ -30,8 +29,7 @@ const UserCards = ({ userTweet, isOpen }) => {
                         </div>
                     </section>
                 </div>
-                
-        </div>
+            </div>
     )
 }
 

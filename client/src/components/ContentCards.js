@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 const ContentCards = ({ contentTweet }) => {
     const imageTweet = contentTweet.retweeted_status?.extended_entities?.media[0].media_url
-    const [isOpen, setIsOpen] = useState(false)
     
     return (
         
