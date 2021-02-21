@@ -791,7 +791,7 @@ const Search = () => {
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("input", {
         id: "input",
         type: "text",
-        placeholder: "Search here",
+        placeholder: "Search here (e.g joerogan)",
         onChange: updateInput,
         value: input
       }, void 0, false, {

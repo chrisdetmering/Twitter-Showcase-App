@@ -33,7 +33,7 @@ const Search = () => {
         e.preventDefault();
 
         setUserTweets([]);
-        
+
             axios
                 .get(`/api/tweets/content?content=${input}`)
                 .then((res) => setContentTweets(res.data.statuses))
@@ -43,7 +43,7 @@ const Search = () => {
     return (
         <div>
             <div>
-                <input id="input" type="text" placeholder="Search here" onChange={updateInput} value={input} />
+                <input id="input" type="text" placeholder="Search here (e.g joerogan)" onChange={updateInput} value={input} />
 
                 <div class="search-buttons">
                     <button id="button-user" onClick={handleClick} type="submit">User</button>
