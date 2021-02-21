@@ -1,7 +1,7 @@
 import React from 'react'
 
 const UserCards = ({ userTweet }) => {
-    const retweetedText = userTweet.retweeted_status?.full_text
+    const retweetedText = userTweet.retweeted_status?.full_text;
     const imageTweet = userTweet.retweeted_status?.extended_entities?.media[0].media_url;
     
     return (

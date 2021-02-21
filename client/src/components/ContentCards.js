@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ContentCards = ({ contentTweet }) => {
+    const retweetedText = contentTweet.retweeted_status?.full_text;
     const imageTweet = contentTweet.retweeted_status?.extended_entities?.media[0].media_url
     
     return (
@@ -18,7 +19,9 @@ const ContentCards = ({ contentTweet }) => {
                     </div>
                 </div>
 
-                <p>{contentTweet.full_text}</p>
+                {retweetedText ? 
+                        <p>{retweetedText}</p>
+                            : <p>{contentTweet.full_text}</p>}
                 <div class="card-image">
                         <img id="card-image" src={imageTweet} />
                     </div>
