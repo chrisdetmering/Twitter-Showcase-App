@@ -19,11 +19,9 @@ server.get("/api/tweets",  (req, res) => {
 
   axios({
     method: 'get',
-    url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}`,
-    params: {
-      tweet_mode: "extended",
-  },
-    headers: {
+    url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}&tweet_mode=extended`,
+    
+headers: {
       Authorization: `Bearer ${access_token}`,
     },
   })
@@ -32,7 +30,8 @@ server.get("/api/tweets",  (req, res) => {
       console.log(response.data)
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(error.response || error);
+      res.status(500).json({ errorMessage: 'Internal server error!'});
     });
 });
 
@@ -51,7 +50,8 @@ server.get("/api/tweets/content", (req, res) => {
       console.log(response.data)
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(error.response || error);
+      res.status(500).json({ errorMessage: 'Internal server error!' })
     });
 })
 

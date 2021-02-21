@@ -3,7 +3,7 @@ import React from 'react'
 const ContentCards = ({ contentTweet }) => {
     const retweetedText = contentTweet.retweeted_status?.full_text;
     const imageTweet = contentTweet.retweeted_status?.extended_entities?.media[0].media_url
-    
+
     return (
         <div class="modals-container">
             <div class="modals">
@@ -19,12 +19,12 @@ const ContentCards = ({ contentTweet }) => {
                     </div>
                 </div>
 
-                {retweetedText ? 
-                        <p>{retweetedText}</p>
-                            : <p>{contentTweet.full_text}</p>}
+                {retweetedText ?
+                    <p>{retweetedText}</p>
+                    : <p>{contentTweet.full_text}</p>}
                 <div class="card-image">
-                        <img id="card-image" src={imageTweet} />
-                    </div>
+                    <img id="card-image" src={imageTweet} />
+                </div>
             </div>
         </div>
 

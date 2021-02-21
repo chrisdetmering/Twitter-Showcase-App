@@ -24,15 +24,14 @@ const Search = () => {
             .then((res) => setUserTweets(res.data))
             .catch((err) => console.log(err))
 
-        input.match(' ') ? alert("Please write an appropriate user handle") : null
-        console.log(userTweets)
+    // input.match(' ') ? alert("Please write an appropriate user handle") : null
+    console.log(userTweets)
     }
 
     // Content Tweets
     
     const handleClickContent = (e) => {
         e.preventDefault();
-
         setUserTweets([]);
 
             axios
