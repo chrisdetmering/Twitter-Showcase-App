@@ -7,7 +7,7 @@
 
 To retrieve twitter time-lines from specific users, type in their correct twitter handles and click the "User" button. To retrieve tweets about a specific user/topic, simply type in the value and click the "content" button.
 
-You can Visit the App here
+You can Visit the App [here](https://twitter-showcase-1.herokuapp.com/)
 
 ![welcome2](https://user-images.githubusercontent.com/55517078/108610476-ded07900-73a3-11eb-9bb2-26fae45dbf96.JPG)
 
