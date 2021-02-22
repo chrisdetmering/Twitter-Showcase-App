@@ -297,7 +297,7 @@ button:focus {
 #nasa-button {
     background-color: white;
     padding: 25px;
-    border-radius: 15px;
+    
     font-family: 'Noto Sans KR', sans-serif;
     outline: none;
     border: 3px solid black;
@@ -306,7 +306,7 @@ button:focus {
 #spacex-button {
     background-color: white;
     padding: 25px;
-    border-radius: 15px;
+   
     font-family: 'Noto Sans KR', sans-serif;
     border: 3px solid black;
 }
@@ -314,7 +314,7 @@ button:focus {
 #elon-button {
     background-color: white;
     padding: 25px;
-    border-radius: 15px;
+    
     font-family: 'Noto Sans KR', sans-serif;
     border: 3px solid black;
 
@@ -323,7 +323,7 @@ button:focus {
 #gavriel-button {
     background-color: white;
     padding: 25px;
-    border-radius: 15px;
+    
     font-family: 'Noto Sans KR', sans-serif;
     border: 3px solid black;
 
@@ -332,7 +332,7 @@ button:focus {
 #dan-button {
     background-color: white;
     padding: 25px;
-    border-radius: 15px;
+    
     font-family: 'Noto Sans KR', sans-serif;
     border: 3px solid black;
 
