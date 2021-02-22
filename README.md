@@ -9,11 +9,11 @@ To retrieve twitter time-lines from specific users, type in their correct twitte
 
 You can Visit the App [here](https://twitter-showcase-1.herokuapp.com/)
 
-![welcome2](https://user-images.githubusercontent.com/55517078/108610476-ded07900-73a3-11eb-9bb2-26fae45dbf96.JPG)
+![welcomegray](https://user-images.githubusercontent.com/55517078/108767756-d3f12200-7524-11eb-81e9-af660c0f5574.JPG)
 
-![joerogan2](https://user-images.githubusercontent.com/55517078/108610482-eb54d180-73a3-11eb-935a-405955020a47.JPG)
+![joerogangray](https://user-images.githubusercontent.com/55517078/108767798-e23f3e00-7524-11eb-9a22-1ad6f5114769.JPG)
 
-![elon2](https://user-images.githubusercontent.com/55517078/108610487-f445a300-73a3-11eb-904a-2e5e8a49b344.JPG)
+![elongray](https://user-images.githubusercontent.com/55517078/108767829-ea977900-7524-11eb-93c0-13739e6d7718.JPG)
 
 # Summary 
 
