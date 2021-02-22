@@ -20,8 +20,7 @@ server.get("/api/tweets",  (req, res) => {
   axios({
     method: 'get',
     url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}&tweet_mode=extended`,
-    
-headers: {
+    headers: {
       Authorization: `Bearer ${access_token}`,
     },
   })
