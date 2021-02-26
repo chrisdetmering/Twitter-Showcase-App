@@ -16,7 +16,7 @@ server.get("/", (req, res) => {
 
 server.get("/api/tweets",  (req, res) => {
     const queryString = req.query.search;
-
+    const random = req.query.random; 
   axios({
     method: 'get',
     url: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${queryString}&tweet_mode=extended`,
@@ -25,8 +25,13 @@ server.get("/api/tweets",  (req, res) => {
     },
   })
     .then(function (response) {
+      if (random === 'yes') { 
+        const randomNumber = Math.floor(Math.random() * response.data.length);
+
+        res.json(response.data[randomNumber]);
+        return; 
+      }
       res.json(response.data);
-      console.log(response.data)
     })
     .catch(function (error) {
       console.log(error.response || error);
