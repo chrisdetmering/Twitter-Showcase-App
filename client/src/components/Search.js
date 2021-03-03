@@ -1,44 +1,35 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import UserCards from './UserCards';
-import ContentCards from './ContentCards';
+import TweetCard from './TweetCard'; 
 
 const Search = () => {
     const [input, setInput] = useState('');
-    const [userTweets, setUserTweets] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
-    const [contentTweets, setContentTweets] = useState([]);
-
+    const [tweets, setTweets] = useState([]); 
 
     const updateInput = (e) => {
         setInput(e.target.value);
     }
-
-    // Username Tweets
     
     const handleClick = (e) => {
         e.preventDefault();
-
-        axios
-            .get(`/api/tweets?search=${input}`)
-            .then((res) => setUserTweets(res.data))
-            .catch((err) => console.log(err))
-
-    input.match(' ') ? alert("Please write an appropriate user handle") : null
+        getTweets(`/api/tweets?search=${input}`, 
+        (res) => setTweets(res.data))
     }
-
-    // Content Tweets
     
     const handleClickContent = (e) => {
         e.preventDefault();
-        setUserTweets([]);
-
-            axios
-                .get(`/api/tweets/content?content=${input}`)
-                .then((res) => setContentTweets(res.data.statuses))
-                .catch((err) => console.log(err))
+            getTweets(`/api/tweets/content?content=${input}`,
+            (res) => setTweets(res.data.statuses) )    
         }
+
+
+    const getTweets = (url, cb) => { 
+        axios.get(url)
+        .then(cb)
+        .catch((err) => console.log(err))
+    }
 
     return (
         <div>
@@ -52,14 +43,11 @@ const Search = () => {
             </div>
 
             <div>
-                {userTweets.map((userTweet) => (
-                    <UserCards isOpen={isOpen} userTweet={userTweet}></UserCards>
+                {tweets.map((tweet) => (
+                    <TweetCard isOpen={isOpen} tweet={tweet}></TweetCard>
                 ))}
             </div>
 
-            {contentTweets.map((contentTweet) => (
-                <ContentCards contentTweet={contentTweet}></ContentCards>
-            ))}
         </div>
     )
 }
