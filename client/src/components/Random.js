@@ -6,6 +6,7 @@ const Random = () => {
     const [tweets, setTweets] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
 
+    
     const handleClick = (e) => {
         e.preventDefault();
 
@@ -16,9 +17,12 @@ const Random = () => {
             .then((res) => setTweets(res.data))
             .catch((err) => console.log(err))
 
+
+            
         setIsOpen(!isOpen);
     };
 
+    //TODO: Move to back end 
     const randomNumber = Math.floor(Math.random() * tweets.length);
     const displayRandomTweet = tweets[randomNumber];
 

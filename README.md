@@ -25,3 +25,17 @@ A problem I faced during the creation of this application was outputting the twe
 # Author 
 
 **Joseph Mittiga** - *Front-End Developer* - [Linkedin](https://www.linkedin.com/in/joseph-mittiga-939121203/)
+
+
+#Good 
+#1. Broke up code correctly, component composition 
+#2. Kept functions small (SRP)
+#3. Kept components small (less than 300 lines)
+
+
+#TO DO 
+#1. Make class/stateless components functions > presentational vs container 
+#2. Fix but with isOpen
+#3. DRY up CSS > because DRY 
+#4. Move getting "random" tweet to back end > Network speed
+#5. Combine UserCards & ContentCards > because DRY 

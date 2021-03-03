@@ -10,6 +10,7 @@ const Search = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [contentTweets, setContentTweets] = useState([]);
 
+
     const updateInput = (e) => {
         setInput(e.target.value);
     }

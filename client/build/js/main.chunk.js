@@ -96,7 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Home */ "./src/components/Home.js");
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\App.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/App.js";
 
 
 
@@ -171,7 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\ContentCards.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/ContentCards.js";
 
 
 const ContentCards = ({
@@ -306,8 +306,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Home.js";
-
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/Home.js";
+ //TODO: Change to function
 
 class Home extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   render() {
@@ -317,25 +317,25 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
         children: "Welcome!"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 17
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         children: "This is a simple web application that utilizes the Twitter API to retrieve twitter timeline information. You can search based on user or content in the search page, or utilize the random tweet page to pull a random tweet from the selected choices."
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 21
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("p", {
         id: "second-home-paragraph",
         children: "Hope you enjoy!"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 17
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 7,
       columnNumber: 13
     }, this);
   }
@@ -361,9 +361,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Nav.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/Nav.js";
 
-
+ //TODO: Change to function
 
 class Nav extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   render() {
@@ -476,7 +476,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Random.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/Random.js";
 
 
 
@@ -490,7 +490,8 @@ const Random = () => {
     const param = e.target.name;
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`/api/tweets?search=${param}`).then(res => setTweets(res.data)).catch(err => console.log(err));
     setIsOpen(!isOpen);
-  };
+  }; //TODO: Move to back end 
+
 
   const randomNumber = Math.floor(Math.random() * tweets.length);
   const displayRandomTweet = tweets[randomNumber];
@@ -509,17 +510,17 @@ const Random = () => {
             src: "https://yt3.ggpht.com/ytc/AAUvwnhTEa6kEyqgSvL3wMaMbUDZtyHvhXehJppDCeOGUCI=s900-c-k-c0x00ffffff-no-rj"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 30,
+            lineNumber: 34,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 33,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 32,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
         id: "spacex-button",
@@ -533,17 +534,17 @@ const Random = () => {
             src: "https://i.pinimg.com/originals/9a/21/4b/9a214b68fc4146d02a5b41882e79987c.jpg"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 35,
+            lineNumber: 39,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 38,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 37,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
         id: "elon-button",
@@ -557,17 +558,17 @@ const Random = () => {
             src: "https://ih1.redbubble.net/image.1226836687.3477/st,small,507x507-pad,600x600,f8f8f8.jpg"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 40,
+            lineNumber: 44,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 43,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 42,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
         id: "gavriel-button",
@@ -582,17 +583,17 @@ const Random = () => {
             src: "https://f4.bcbits.com/img/a0122641443_10.jpg"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 45,
+            lineNumber: 49,
             columnNumber: 21
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 48,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
         id: "dan-button",
@@ -607,22 +608,22 @@ const Random = () => {
             src: "https://f4.bcbits.com/img/a1494578543_5.jpg"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 50,
+            lineNumber: 54,
             columnNumber: 25
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 53,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 52,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 31,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       class: "card-container",
@@ -636,12 +637,12 @@ const Random = () => {
             children: "X"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 58,
+            lineNumber: 62,
             columnNumber: 29
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 57,
+          lineNumber: 61,
           columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "modal-header",
@@ -651,25 +652,25 @@ const Random = () => {
               src: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.profile_image_url
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 62,
+              lineNumber: 66,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               children: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.name
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 63,
+              lineNumber: 67,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               id: "screen-name",
               children: ["@ ", displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.user.screen_name]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 64,
+              lineNumber: 68,
               columnNumber: 33
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 61,
+            lineNumber: 65,
             columnNumber: 29
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             class: "stats-container",
@@ -678,34 +679,34 @@ const Random = () => {
                 class: "fas fa-heart"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 69,
+                lineNumber: 73,
                 columnNumber: 38
               }, undefined), displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.favorite_count]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 69,
+              lineNumber: 73,
               columnNumber: 33
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
               children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("i", {
                 class: "fas fa-retweet"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 70,
+                lineNumber: 74,
                 columnNumber: 38
               }, undefined), displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.retweet_count]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 70,
+              lineNumber: 74,
               columnNumber: 33
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 68,
+            lineNumber: 72,
             columnNumber: 29
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 64,
           columnNumber: 25
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           class: "random-modal-section",
@@ -713,27 +714,27 @@ const Random = () => {
             children: displayRandomTweet === null || displayRandomTweet === void 0 ? void 0 : displayRandomTweet.full_text
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 75,
+            lineNumber: 79,
             columnNumber: 29
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 74,
+          lineNumber: 78,
           columnNumber: 25
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 60,
         columnNumber: 21
       }, undefined) : null
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 58,
       columnNumber: 13
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 26,
+    lineNumber: 30,
     columnNumber: 9
   }, undefined);
 };
@@ -760,7 +761,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UserCards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserCards */ "./src/components/UserCards.js");
 /* harmony import */ var _ContentCards__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContentCards */ "./src/components/ContentCards.js");
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\Search.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/Search.js";
 
 
 
@@ -801,7 +802,7 @@ const Search = () => {
         value: input
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 17
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         class: "search-buttons",
@@ -812,7 +813,7 @@ const Search = () => {
           children: "User"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 49,
           columnNumber: 21
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
           id: "button-content",
@@ -822,17 +823,17 @@ const Search = () => {
           children: "Content"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 50,
           columnNumber: 21
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 17
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 45,
       columnNumber: 13
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       children: userTweets.map(userTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_UserCards__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -840,23 +841,23 @@ const Search = () => {
         userTweet: userTweet
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 55,
+        lineNumber: 56,
         columnNumber: 21
       }, undefined))
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 54,
       columnNumber: 13
     }, undefined), contentTweets.map(contentTweet => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_ContentCards__WEBPACK_IMPORTED_MODULE_4__["default"], {
       contentTweet: contentTweet
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 61,
       columnNumber: 17
     }, undefined))]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 43,
+    lineNumber: 44,
     columnNumber: 9
   }, undefined);
 };
@@ -879,7 +880,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\components\\UserCards.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/components/UserCards.js";
 
 
 const UserCards = ({
@@ -1054,7 +1055,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App */ "./src/App.js");
 
-var _jsxFileName = "C:\\Users\\joe\\Documents\\coding projects\\twitter-showcase-app\\client\\src\\index.js";
+var _jsxFileName = "/Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/index.js";
 
 
 
@@ -1080,8 +1081,8 @@ react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render( /*#__PURE__*/Object(rea
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\joe\Documents\coding projects\twitter-showcase-app\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! C:\Users\joe\Documents\coding projects\twitter-showcase-app\client\src\index.js */"./src/index.js");
+__webpack_require__(/*! /Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! /Users/chris/Desktop/SDMM/JoeMittiga/codeReviewRefactors/Twitter-Showcase-App/client/src/index.js */"./src/index.js");
 
 
 /***/ })

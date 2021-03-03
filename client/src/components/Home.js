@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//TODO: Change to function
 class Home extends Component {
     render() {
         return (

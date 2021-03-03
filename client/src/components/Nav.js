@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-
+//TODO: Change to function
 class Nav extends Component {
     render() {
         return (
